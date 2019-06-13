@@ -14,4 +14,4 @@ gulp.task('sass', function(){
         .pipe(gulp.dest(cssDest));
 });
 
-gulp.task( 'default', [ 'sass' ] );
+gulp.task('default', gulp.series('sass'));
