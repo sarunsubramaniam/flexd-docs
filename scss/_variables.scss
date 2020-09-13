@@ -1,14 +1,25 @@
-$text-color-grade--1: rgba(54, 54, 54, 1);
-$text-color-grade--2: rgba(74, 74, 74, 1);
+$text-color-grade--1: rgba(29, 29, 31, 1);
+$text-color-grade--2: rgba(29, 29, 31, 0.75);
 
 $white-grade--1: rgba(255, 255, 255, 1);
 
-$red: #eb4e3d;
-$yellow: #ffd700;
-$green: #2acb42;
-$blue: #3880d1;
-$grey: #f4f4f5;
-$black: #444444;
+$red-grade--1: rgba(235, 78, 61, 1);
+$red-grade--2: rgba(235, 78, 61, 0.075);
 
-$primaryColor: $blue;
-$secondaryColor: $black;
+$yellow-grade--1: rgba(255, 215, 0, 1);
+$yellow-grade--2: rgba(255, 215, 0, 0.075);
+
+$green-grade--1: rgba(42, 203, 66, 1);
+$green-grade--2: rgba(42, 203, 66, 0.075);
+
+$blue-grade--1: rgba(56, 128, 209, 1);
+$blue-grade--2: rgba(56, 128, 209, 0.075);
+
+$grey-grade--1: rgba(244, 244, 245, 1);
+$grey-grade--2: rgba(244, 244, 245, 0.5);
+
+$black-grade--1: rgba(68, 68, 68, 1);
+$black-grade--2: rgba(68, 68, 68, 0.075);
+
+$primaryColor: $blue-grade--1;
+$secondaryColor: $black-grade--1;

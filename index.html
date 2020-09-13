@@ -8,34 +8,64 @@
   </head>
   <style>
     .doc-header {
-      background-color: #efefef;
+      background-color: #141414;
+      /* background-image: linear-gradient(
+        135deg,
+        rgb(181, 41, 72),
+        rgba(228, 120, 103, 1)
+      ); */
     }
     .doc-header-content {
-      display: inline-flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      color: #262829;
-      min-height: 380px;
+      color: #fff;
+      min-height: 320px;
+      justify-content: center;
+      align-items: center;
     }
-    .doc-header-content > span {
-      padding: 5px 5px 5px 20px;
-      width: 50%;
+    .doc-header-content h4 {
+      font-weight: 100;
+      width: 75%;
+      margin: 15px auto;
     }
     .doc-header-content img {
-      height: 175px;
+      height: 125px;
       max-width: 100%;
     }
     .doc-header-content .button-wrapper {
       justify-content: center;
     }
     .doc-header h4 span {
-      color: #ffc700;
-      text-shadow: 1px 1px 0px #262829;
+      /* color: #ffc700; */
+      font-weight: 700;
+      /* display: flex; */
+      /* justify-content: center; */
+      /* text-shadow: 1px 1px 0px #262829; */
+    }
+    .doc-features {
+      background: #f8f8f9;
+      min-height: 100px;
+      /* position: sticky; */
+      /* top: 0; */
+      /* z-index: 1; */
+      display: flex;
+      align-items: center;
+      text-align: center;
+      /* padding: 20px; */
+    }
+    .doc-features h6 {
+      font-weight: 100;
+      font-size: 0.875rem;
+      margin: 0;
+    }
+    .doc-features img {
+      height: 32px;
+      margin-bottom: 10px;
+    }
+    .doc-feature-item {
+      padding: 20px 0;
     }
     .doc-body {
-      padding: 45px 0;
+      padding: 25px 0;
     }
     .component-section {
       padding: 20px 15px;
@@ -60,220 +90,321 @@
       width: calc(100% - 10px);
       border-radius: 10px;
     }
+    .doc-menu {
+      position: sticky;
+      top: 40px;
+    }
+    .doc-menu ul {
+      padding: 20px 0;
+    }
+    .doc-menu ul li {
+      list-style: none;
+      font-size: 1.5em;
+    }
   </style>
   <body>
-    <div class="fm-container-fluid doc-header">
-      <div class="fm-container component-section">
-        <div class="fm-row">
-          <div class="grid-12 doc-header-content">
+    <div class="wrapper-fluid doc-header">
+      <div class="wrapper component-section">
+        <div class="grid-wrapper doc-header-content">
+          <div class="grid-sm-7">
             <img src="images/docs/logo.png" alt="" />
             <span
               ><h4>
-                A free open source, responsive UI framework completely built
+                A free, open source, responsive UI framework completely built
                 with
                 <span>Flexbox & SASS</span>
               </h4>
             </span>
             <div class="grid-12 button-wrapper">
-              <button class="button">Download</button>
+              <button class="button white">Download</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="fm-container-fluid doc-body">
-      <div class="fm-container component-section">
-        <div class="fm-row">
-          <div class="grid-12">
-            <h3>Grid</h3>
+    <div class="wrapper-fluid doc-features">
+      <div class="wrapper">
+        <div class="grid-wrapper">
+          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+            <img src="images/docs/responsive.svg" alt="" />
+            <h6>Responsive</h6>
           </div>
-        </div>
-        <div class="fm-row grid-example">
-          <div class="grid-12">
-            <p>grid-12</p>
+          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+            <img src="images/docs/cube.svg" alt="" />
+            <h6>Flexbox</h6>
           </div>
-        </div>
-        <div class="fm-row grid-example">
-          <div class="grid-12 grid-sm-6">
-            <p>grid-6</p>
+          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+            <img src="images/docs/magic.svg" alt="" />
+            <h6>Elegant UI</h6>
           </div>
-          <div class="grid-12 grid-sm-6">
-            <p>grid-6</p>
+          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+            <img src="images/docs/ban.svg" alt="" />
+            <h6>jQuery Free</h6>
           </div>
-        </div>
-        <div class="fm-row grid-example">
-          <div class="grid-12 grid-sm-7">
-            <p>grid-7</p>
+          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+            <img src="images/docs/responsive.svg" alt="" />
+            <h6>Responsive</h6>
           </div>
-          <div class="grid-12 grid-sm-5">
-            <p>grid-5</p>
-          </div>
-        </div>
-        <div class="fm-row grid-example">
-          <div class="grid-12 grid-sm-8">
-            <p>grid-8</p>
-          </div>
-          <div class="grid-12 grid-sm-4">
-            <p>grid-4</p>
-          </div>
-        </div>
-        <div class="fm-row grid-example">
-          <div class="grid-12 grid-sm-9">
-            <p>grid-9</p>
-          </div>
-          <div class="grid-12 grid-sm-3">
-            <p>grid-3</p>
-          </div>
-        </div>
-        <div class="fm-row grid-example">
-          <div class="grid-12 grid-sm-10">
-            <p>grid-10</p>
-          </div>
-          <div class="grid-12 grid-sm-2">
-            <p>grid-2</p>
-          </div>
-        </div>
-        <div class="fm-row grid-example">
-          <div class="grid-12 grid-sm-4">
-            <p>grid-4</p>
-          </div>
-          <div class="grid-12 grid-sm-4">
-            <p>grid-4</p>
-          </div>
-          <div class="grid-12 grid-sm-4">
-            <p>grid-4</p>
-          </div>
-        </div>
-        <div class="fm-row grid-example">
-          <div class="grid-12 grid-sm-3">
-            <p>grid-3</p>
-          </div>
-          <div class="grid-12 grid-sm-3">
-            <p>grid-3</p>
-          </div>
-          <div class="grid-12 grid-sm-3">
-            <p>grid-3</p>
-          </div>
-          <div class="grid-12 grid-sm-3">
-            <p>grid-3</p>
+          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+            <img src="images/docs/responsive.svg" alt="" />
+            <h6>Responsive</h6>
           </div>
         </div>
       </div>
-      <div class="fm-container">
-        <div class="fm-row">
-          <div class="grid-12">
-            <h3>Cards</h3>
+    </div>
+    <div class="wrapper-fluid doc-body">
+      <div class="wrapper">
+        <div class="grid-wrapper">
+          <div class="grid-3 grid-sm-2">
+            <div class="doc-menu">
+              <ul>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#card">Card</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#alerts">Alerts</a></li>
+              </ul>
+            </div>
           </div>
+          <div class="grid-9 grid-sm-10">
+            <div id="grid" class="component-section">
+              <div class="grid-wrapper">
+                <div class="grid-12">
+                  <h4>Grid</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Porro repudiandae, odio obcaecati maxime, laudantium earum
+                    culpa explicabo consequuntur alias, debitis voluptatibus
+                    repellat corporis. Possimus dicta reprehenderit nesciunt nam
+                    magni dignissimos.
+                  </p>
+                </div>
+              </div>
+              <div class="grid-wrapper grid-example">
+                <div class="grid-12">
+                  <p>grid-12</p>
+                </div>
+              </div>
+              <div class="grid-wrapper grid-example">
+                <div class="grid-12 grid-sm-6">
+                  <p>grid-6</p>
+                </div>
+                <div class="grid-12 grid-sm-6">
+                  <p>grid-6</p>
+                </div>
+              </div>
+              <div class="grid-wrapper grid-example">
+                <div class="grid-12 grid-sm-7">
+                  <p>grid-7</p>
+                </div>
+                <div class="grid-12 grid-sm-5">
+                  <p>grid-5</p>
+                </div>
+              </div>
+              <div class="grid-wrapper grid-example">
+                <div class="grid-12 grid-sm-8">
+                  <p>grid-8</p>
+                </div>
+                <div class="grid-12 grid-sm-4">
+                  <p>grid-4</p>
+                </div>
+              </div>
+              <div class="grid-wrapper grid-example">
+                <div class="grid-12 grid-sm-9">
+                  <p>grid-9</p>
+                </div>
+                <div class="grid-12 grid-sm-3">
+                  <p>grid-3</p>
+                </div>
+              </div>
+              <div class="grid-wrapper grid-example">
+                <div class="grid-12 grid-sm-10">
+                  <p>grid-10</p>
+                </div>
+                <div class="grid-12 grid-sm-2">
+                  <p>grid-2</p>
+                </div>
+              </div>
+              <div class="grid-wrapper grid-example">
+                <div class="grid-12 grid-sm-4">
+                  <p>grid-4</p>
+                </div>
+                <div class="grid-12 grid-sm-4">
+                  <p>grid-4</p>
+                </div>
+                <div class="grid-12 grid-sm-4">
+                  <p>grid-4</p>
+                </div>
+              </div>
+              <div class="grid-wrapper grid-example">
+                <div class="grid-12 grid-sm-3">
+                  <p>grid-3</p>
+                </div>
+                <div class="grid-12 grid-sm-3">
+                  <p>grid-3</p>
+                </div>
+                <div class="grid-12 grid-sm-3">
+                  <p>grid-3</p>
+                </div>
+                <div class="grid-12 grid-sm-3">
+                  <p>grid-3</p>
+                </div>
+              </div>
+            </div>
+            <div id="card" class="component-section">
+              <div class="grid-wrapper">
+                <div class="grid-12">
+                  <h4>Cards</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni eligendi voluptates dolor odio fuga beatae quod non
+                    hic cupiditate dolorem? Reiciendis deleniti cupiditate vero
+                    itaque odio eveniet repellendus ducimus sequi!
+                  </p>
+                </div>
 
-          <div class="grid-12 grid-sm-6 grid-md-3">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/docs/1280x960.png" alt="" />
-              </div>
-              <div class="card-content">
-                <h4>Title</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Magni nisi facere ducimus.
-                </p>
-                <div class="button-wrapper">
-                  <button class="button primary fluid-sm">Primary</button>
-                  <button class="button secondary fluid-sm">Secondary</button>
+                <div class="grid-12 grid-sm-6 grid-md-4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/docs/1280x960.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <h4>Title</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Magni nisi facere ducimus.
+                      </p>
+                      <div class="button-wrapper">
+                        <button class="button primary fluid">Primary</button>
+                        <button class="button secondary fluid">
+                          Secondary
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-12 grid-sm-6 grid-md-4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/docs/1280x960.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <h4>Title</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Magni nisi facere ducimus.
+                      </p>
+                      <div class="button-wrapper">
+                        <button class="button primary solid fluid">
+                          Primary
+                        </button>
+                        <button class="button secondary solid fluid">
+                          Secondary
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-12 grid-sm-6 grid-md-4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/docs/1280x960.png" alt="" />
+                    </div>
+                    <div class="card-content">
+                      <h4>Title</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Magni nisi facere ducimus.
+                      </p>
+                      <div class="button-wrapper">
+                        <button class="button info solid fluid">Info</button>
+                        <button class="button error solid fluid">Error</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="grid-12 grid-sm-6 grid-md-3">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/docs/1280x960.png" alt="" />
-              </div>
-              <div class="card-content">
-                <h4>Title</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Magni nisi facere ducimus.
-                </p>
-                <div class="button-wrapper">
-                  <button class="button primary solid fluid">Primary</button>
-                  <button class="button secondary solid fluid">
-                    Secondary
-                  </button>
+            <div id="buttons" class="component-section">
+              <div class="grid-wrapper">
+                <div class="grid-12">
+                  <h4>Buttons</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Porro repudiandae, odio obcaecati maxime, laudantium earum
+                    culpa explicabo consequuntur alias, debitis voluptatibus
+                    repellat corporis. Possimus dicta reprehenderit nesciunt nam
+                    magni dignissimos.
+                  </p>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="grid-12 grid-sm-6 grid-md-3">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/docs/1280x960.png" alt="" />
-              </div>
-              <div class="card-content">
-                <h4>Title</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Magni nisi facere ducimus.
-                </p>
-                <div class="button-wrapper">
-                  <button class="button fluid-sm">Secondary</button>
-                  <button class="button solid fluid-sm">Primary</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="grid-12 grid-sm-6 grid-md-3">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/docs/1280x960.png" alt="" />
-              </div>
-              <div class="card-content">
-                <h4>Title</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Magni nisi facere ducimus.
-                </p>
-                <div class="button-wrapper">
-                  <button class="button solid">Default</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fm-container component-section">
-        <div class="fm-row">
-          <div class="grid-12">
-            <h3>Buttons</h3>
-          </div>
 
-          <div class="grid-12">
-            <div class="button-wrapper">
-              <button class="button solid">Default</button>
-              <button class="button primary">Primary</button>
-              <button class="button secondary">Secondary</button>
-              <button class="button primary solid">Primary</button>
-              <button class="button secondary solid">Secondary</button>
-              <button class="button error">Primary</button>
-              <button class="button info">Secondary</button>
-              <button class="button error solid">Primary</button>
-              <button class="button info solid">Secondary</button>
+                <div class="grid-12">
+                  <div class="button-wrapper">
+                    <button class="button solid">Default</button>
+                    <button class="button primary">Primary</button>
+                    <button class="button secondary">Secondary</button>
+                    <button class="button primary solid">Primary</button>
+                    <button class="button secondary solid">Secondary</button>
+                    <button class="button error">Primary</button>
+                    <button class="button info">Secondary</button>
+                    <button class="button error solid">Primary</button>
+                    <button class="button info solid">Secondary</button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="fm-container component-section">
-        <div class="fm-row">
-          <div class="grid-12">
-            <h3>Headings</h3>
-          </div>
+            <div id="typography" class="component-section">
+              <div class="grid-wrapper">
+                <div class="grid-12">
+                  <h4>Typography</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Porro repudiandae, odio obcaecati maxime, laudantium earum
+                    culpa explicabo consequuntur alias, debitis voluptatibus
+                    repellat corporis. Possimus dicta reprehenderit nesciunt nam
+                    magni dignissimos.
+                  </p>
+                </div>
 
-          <div class="grid-12">
-            <h1>Header 1</h1>
-            <h2>Header 2</h2>
-            <h3>Header 3</h3>
-            <h4>Header 4</h4>
-            <h5>Header 5</h5>
-            <h6>Header 6</h6>
+                <div class="grid-12">
+                  <h1>Header 1</h1>
+                  <h2>Header 2</h2>
+                  <h3>Header 3</h3>
+                  <h4>Header 4</h4>
+                  <h5>Header 5</h5>
+                  <h6>Header 6</h6>
+                </div>
+              </div>
+            </div>
+            <div id="alerts" class="component-section">
+              <div class="grid-wrapper">
+                <div class="grid-12">
+                  <h4>Alerts</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Porro repudiandae, odio obcaecati maxime, laudantium earum
+                    culpa explicabo consequuntur alias, debitis voluptatibus
+                    repellat corporis. Possimus dicta reprehenderit nesciunt nam
+                    magni dignissimos.
+                  </p>
+                </div>
+
+                <div class="grid-12">
+                  <div class="alert primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <div class="alert success">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <div class="alert warning">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <div class="alert error">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
