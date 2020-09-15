@@ -1,3 +1,5 @@
+/* Wrapper */
+
 $ = (function () {
   function NodeList(elems) {
     this.length = 0;
@@ -35,17 +37,28 @@ $ = (function () {
   return $;
 })();
 
-$.NodeList.prototype.myPlugin = function () {
-  // debugger;
-  return this.each(function () {
-    this.addEventListener("click", function () {
-      alert(this.classList);
-    });
+/* Tabs */
+
+$.NodeList.prototype.tabs = function () {
+  return this.each(function (elem) {
+    (function () {
+      let tabs = elem.querySelectorAll(".tab-header ul li"),
+        tabContent = elem.querySelectorAll(".tab-content div");
+      [...tabContent].map((currentItem, idx) => {
+        currentItem.setAttribute("class", "tab-content-" + idx);
+      });
+      [...tabs].map((tab, idx) => {
+        idx === 0 ? tab.classList.add("active") : null;
+        tab.setAttribute("data-tab", idx);
+        tab.addEventListener("click", function (e) {
+          [...tabs].map((tab) => tab.classList.remove("active"));
+          [...tabContent].map(
+            (currentItem, idx) => (currentItem.style.display = "none")
+          );
+          e.target.classList.add("active");
+          document.querySelector(".tab-content-" + idx).style.display = "block";
+        });
+      });
+    })();
   });
 };
-
-// let test = document.querySelector(".test");
-// let newTest = document.querySelector(".newtest");
-
-// $(test).myPlugin();
-// $(newTest).myPlugin();

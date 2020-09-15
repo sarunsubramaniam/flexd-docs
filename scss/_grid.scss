@@ -92,7 +92,7 @@
 
 .grid {
   flex-basis: 0;
-  flex-ggrid-wrapper: 1;
+  flex-grow: 1;
   max-width: 100%;
 }
 
@@ -126,7 +126,7 @@
   }
   .grid-sm {
     flex-basis: 0;
-    flex-ggrid-wrapper: 1;
+    flex-grow: 1;
     max-width: 100%;
   }
 
@@ -161,7 +161,7 @@
   }
   .grid-md {
     flex-basis: 0;
-    flex-ggrid-wrapper: 1;
+    flex-grow: 1;
     max-width: 100%;
   }
 
@@ -196,7 +196,7 @@
   }
   .grid-lg {
     flex-basis: 0;
-    flex-ggrid-wrapper: 1;
+    flex-grow: 1;
     max-width: 100%;
   }
 
@@ -231,7 +231,7 @@
   }
   .grid-xl {
     flex-basis: 0;
-    flex-ggrid-wrapper: 1;
+    flex-grow: 1;
     max-width: 100%;
   }
 

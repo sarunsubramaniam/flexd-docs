@@ -3,17 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="images/docs/favicon.png"
+      sizes="16x16"
+      type="image/png"
+    />
     <link rel="stylesheet" href="css/flexmaster.css" />
     <title>Flex Master</title>
   </head>
   <style>
     .doc-header {
       background-color: #141414;
-      /* background-image: linear-gradient(
+      position: relative;
+      background-image: linear-gradient(
         135deg,
         rgb(181, 41, 72),
         rgba(228, 120, 103, 1)
-      ); */
+      );
+      padding: 0;
     }
     .doc-header-content {
       text-align: center;
@@ -42,8 +50,8 @@
       /* text-shadow: 1px 1px 0px #262829; */
     }
     .doc-features {
-      background: #f8f8f9;
-      min-height: 100px;
+      background: rgba(242, 242, 242, 0.07);
+      min-height: 120px;
       /* position: sticky; */
       /* top: 0; */
       /* z-index: 1; */
@@ -56,10 +64,11 @@
       font-weight: 100;
       font-size: 0.875rem;
       margin: 0;
+      color: #fff;
     }
     .doc-features img {
-      height: 32px;
-      margin-bottom: 10px;
+      height: 48px;
+      margin-bottom: 1rem;
     }
     .doc-feature-item {
       padding: 20px 0;
@@ -92,7 +101,7 @@
     }
     .doc-menu {
       position: sticky;
-      top: 40px;
+      top: 10px;
     }
     .doc-menu ul {
       padding: 20px 0;
@@ -100,6 +109,15 @@
     .doc-menu ul li {
       list-style: none;
       font-size: 1.5em;
+    }
+    .doc-menu ul li a {
+      color: rgba(68, 68, 68, 0.25);
+      transition: 0.25s ease-in-out;
+      text-decoration: none;
+    }
+    .doc-menu ul li a.active {
+      color: rgba(68, 68, 68, 1);
+      transition: 0.25s ease-in-out;
     }
   </style>
   <body>
@@ -121,48 +139,53 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="wrapper-fluid doc-features">
-      <div class="wrapper">
-        <div class="grid-wrapper">
-          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
-            <img src="images/docs/responsive.svg" alt="" />
-            <h6>Responsive</h6>
-          </div>
-          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
-            <img src="images/docs/cube.svg" alt="" />
-            <h6>Flexbox</h6>
-          </div>
-          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
-            <img src="images/docs/magic.svg" alt="" />
-            <h6>Elegant UI</h6>
-          </div>
-          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
-            <img src="images/docs/ban.svg" alt="" />
-            <h6>jQuery Free</h6>
-          </div>
-          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
-            <img src="images/docs/responsive.svg" alt="" />
-            <h6>Responsive</h6>
-          </div>
-          <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
-            <img src="images/docs/responsive.svg" alt="" />
-            <h6>Responsive</h6>
+      <div class="wrapper-fluid doc-features">
+        <div class="wrapper">
+          <div class="grid-wrapper">
+            <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+              <img src="images/docs/responsive.png" alt="" />
+              <h6>Responsive</h6>
+            </div>
+            <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+              <img src="images/docs/cube.png" alt="" />
+              <h6>Flexbox</h6>
+            </div>
+            <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+              <img src="images/docs/magic.png" alt="" />
+              <h6>Elegant UI</h6>
+            </div>
+            <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+              <img src="images/docs/ban.png" alt="" />
+              <h6>jQuery Free</h6>
+            </div>
+            <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+              <img src="images/docs/responsive.png" alt="" />
+              <h6>Responsive</h6>
+            </div>
+            <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
+              <img src="images/docs/responsive.png" alt="" />
+              <h6>Responsive</h6>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="wrapper-fluid doc-body">
       <div class="wrapper">
         <div class="grid-wrapper">
           <div class="grid-3 grid-sm-2">
             <div class="doc-menu">
               <ul>
-                <li><a href="#grid">Grid</a></li>
+                <li>
+                  <a class="active" href="#grid">Grid</a>
+                </li>
                 <li><a href="#card">Card</a></li>
                 <li><a href="#buttons">Buttons</a></li>
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#tabs">Tabs</a></li>
+                <li><a href="#table">Table</a></li>
               </ul>
             </div>
           </div>
@@ -405,10 +428,136 @@
                 </div>
               </div>
             </div>
+            <div id="tabs" class="component-section">
+              <div class="grid-wrapper">
+                <div class="grid-12">
+                  <h4>Tabs</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Porro repudiandae, odio obcaecati maxime, laudantium earum
+                    culpa explicabo consequuntur alias, debitis voluptatibus
+                    repellat corporis. Possimus dicta reprehenderit nesciunt nam
+                    magni dignissimos.
+                  </p>
+                </div>
+
+                <div class="grid-12">
+                  <div id="tab" class="tabs">
+                    <div class="tab-header">
+                      <ul>
+                        <li>Tab 1</li>
+                        <li>Tab 2</li>
+                        <li>Tab 3</li>
+                      </ul>
+                    </div>
+                    <div class="tab-content">
+                      <div class="">
+                        Tab 1 ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quibusdam sunt blanditiis natus ad, porro facere
+                        totam voluptate dolores optio explicabo, excepturi
+                        quisquam odio quos nihil molestias reprehenderit rerum
+                        corporis mollitia. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Magni nesciunt odit
+                        corrupti ducimus temporibus, perferendis dicta, tenetur
+                        tempora laudantium fuga a laboriosam aut! Perspiciatis
+                        nihil laudantium natus optio, ea quam!
+                      </div>
+                      <div class="">
+                        ipsum dolor sit amet consectetur, adipisicing elit.
+                        Quibusdam sunt blanditiis natus ad, porro facere totam
+                        voluptate dolores optio explicabo, excepturi quisquam
+                        odio quos nihil molestias reprehenderit rerum corporis
+                        mollitia.
+                      </div>
+                      <div class="">
+                        Tab 3 ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quibusdam sunt blanditiis natus ad, porro facere
+                        totam voluptate dolores optio explicabo, excepturi
+                        quisquam odio quos nihil molestias reprehenderit rerum
+                        corporis mollitia. excepturi quisquam odio quos nihil
+                        molestias reprehenderit rerum corporis mollitia.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="table" class="component-section">
+              <div class="grid-wrapper">
+                <div class="grid-12">
+                  <h4>Table</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Porro repudiandae, odio obcaecati maxime, laudantium earum
+                    culpa explicabo consequuntur alias, debitis voluptatibus
+                    repellat corporis. Possimus dicta reprehenderit nesciunt nam
+                    magni dignissimos.
+                  </p>
+                </div>
+
+                <div class="grid-12">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Age</th>
+                        <th>Designation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>sdasd</td>
+                        <td>asdasd</td>
+                        <td>asdasd</td>
+                        <td>asdasd</td>
+                      </tr>
+                      <tr>
+                        <td>sdasd</td>
+                        <td>asdasd</td>
+                        <td>asdasd</td>
+                        <td>asdasd</td>
+                      </tr>
+                      <tr>
+                        <td>sdasd</td>
+                        <td>asdasd</td>
+                        <td>asdasd</td>
+                        <td>asdasd</td>
+                      </tr>
+                      <tr>
+                        <td>sdasd</td>
+                        <td>asdasd</td>
+                        <td>asdasd</td>
+                        <td>asdasd</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
   <script src="index.js"></script>
+  <script>
+    /* Menu */
+    (function () {
+      let menuItem = document.querySelectorAll(".doc-menu ul li a");
+      [...menuItem].map((currentItem, idx) => {
+        currentItem.addEventListener("click", function (e) {
+          [...menuItem].map((removeItem) =>
+            removeItem.classList.remove("active")
+          );
+          e.target.classList.add("active");
+        });
+      });
+    })();
+
+    /* Tab */
+    let tabOne = document.getElementById("tab");
+    $(tabOne).tabs();
+  </script>
 </html>
