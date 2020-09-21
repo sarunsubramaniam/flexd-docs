@@ -16,11 +16,8 @@
     .doc-header {
       background-color: #141414;
       position: relative;
-      background-image: linear-gradient(
-        135deg,
-        rgb(181, 41, 72),
-        rgba(228, 120, 103, 1)
-      );
+      background-image: linear-gradient(-135deg, #680f4b, #fe5264);
+      /* background: #f7e8cf; */
       padding: 0;
     }
     .doc-header-content {
@@ -119,6 +116,9 @@
       color: rgba(68, 68, 68, 1);
       transition: 0.25s ease-in-out;
     }
+    .fm-tab:not(:first-child) {
+      display: none;
+    }
   </style>
   <body>
     <div class="wrapper-fluid doc-header">
@@ -185,12 +185,13 @@
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#alerts">Alerts</a></li>
                 <li><a href="#tabs">Tabs</a></li>
+                <li><a href="#accordion">Accordion</a></li>
                 <li><a href="#table">Table</a></li>
               </ul>
             </div>
           </div>
           <div class="grid-9 grid-sm-10">
-            <div id="grid" class="component-section">
+            <div id="grid" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
                   <h4>Grid</h4>
@@ -274,7 +275,7 @@
                 </div>
               </div>
             </div>
-            <div id="card" class="component-section">
+            <div id="card" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
                   <h4>Cards</h4>
@@ -348,7 +349,7 @@
                 </div>
               </div>
             </div>
-            <div id="buttons" class="component-section">
+            <div id="buttons" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
                   <h4>Buttons</h4>
@@ -376,7 +377,7 @@
                 </div>
               </div>
             </div>
-            <div id="typography" class="component-section">
+            <div id="typography" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
                   <h4>Typography</h4>
@@ -399,7 +400,7 @@
                 </div>
               </div>
             </div>
-            <div id="alerts" class="component-section">
+            <div id="alerts" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
                   <h4>Alerts</h4>
@@ -428,7 +429,7 @@
                 </div>
               </div>
             </div>
-            <div id="tabs" class="component-section">
+            <div id="tabs" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
                   <h4>Tabs</h4>
@@ -442,7 +443,7 @@
                 </div>
 
                 <div class="grid-12">
-                  <div id="tab" class="tabs">
+                  <div id="tab-name" class="tabs">
                     <div class="tab-header">
                       <ul>
                         <li>Tab 1</li>
@@ -451,7 +452,7 @@
                       </ul>
                     </div>
                     <div class="tab-content">
-                      <div class="">
+                      <div class="tab-child">
                         Tab 1 ipsum dolor sit amet consectetur, adipisicing
                         elit. Quibusdam sunt blanditiis natus ad, porro facere
                         totam voluptate dolores optio explicabo, excepturi
@@ -462,14 +463,14 @@
                         tempora laudantium fuga a laboriosam aut! Perspiciatis
                         nihil laudantium natus optio, ea quam!
                       </div>
-                      <div class="">
+                      <div class="tab-child">
                         ipsum dolor sit amet consectetur, adipisicing elit.
                         Quibusdam sunt blanditiis natus ad, porro facere totam
                         voluptate dolores optio explicabo, excepturi quisquam
                         odio quos nihil molestias reprehenderit rerum corporis
                         mollitia.
                       </div>
-                      <div class="">
+                      <div class="tab-child">
                         Tab 3 ipsum dolor sit amet consectetur, adipisicing
                         elit. Quibusdam sunt blanditiis natus ad, porro facere
                         totam voluptate dolores optio explicabo, excepturi
@@ -483,7 +484,59 @@
               </div>
             </div>
 
-            <div id="table" class="component-section">
+            <div id="accordion" class="component-section fm-tab">
+              <div class="grid-wrapper">
+                <div class="grid-12">
+                  <h4>Accordion</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Porro repudiandae, odio obcaecati maxime, laudantium earum
+                    culpa explicabo consequuntur alias, debitis voluptatibus
+                    repellat corporis. Possimus dicta reprehenderit nesciunt nam
+                    magni dignissimos.
+                  </p>
+                </div>
+
+                <div class="grid-12">
+                  <div id="collapsible" class="accordion">
+                    <ul>
+                      <li>
+                        <div class="accordion-head">Accordion 1</div>
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab unde doloribus similique aspernatur eos culpa
+                          voluptatum vel nisi molestias quae temporibus modi
+                          officia dolore at aperiam, perferendis id itaque
+                          quasi.
+                        </div>
+                      </li>
+                      <li>
+                        <div class="accordion-head">Accordion 2</div>
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Libero, asperiores suscipit placeat atque
+                          deleniti quod, voluptatibus a voluptas at incidunt
+                          repudiandae, soluta illo et amet praesentium? Dicta
+                          maiores repudiandae similique.
+                        </div>
+                      </li>
+                      <li>
+                        <div class="accordion-head">Accordion 3</div>
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Assumenda aspernatur sapiente quae ea quaerat,
+                          dolores nemo sunt aut rem tempore possimus quam
+                          eligendi tenetur adipisci molestias facilis officiis
+                          sit recusandae.
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="table" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
                   <h4>Table</h4>
@@ -508,28 +561,28 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>sdasd</td>
-                        <td>asdasd</td>
-                        <td>asdasd</td>
-                        <td>asdasd</td>
+                        <td>Arun</td>
+                        <td>C210, Lakewood, West Alamada Avenue</td>
+                        <td>29</td>
+                        <td>UI Developer</td>
                       </tr>
                       <tr>
-                        <td>sdasd</td>
-                        <td>asdasd</td>
-                        <td>asdasd</td>
-                        <td>asdasd</td>
+                        <td>Sugan</td>
+                        <td>1245, North Boulder, Alpine Avenue</td>
+                        <td>28</td>
+                        <td>Data Scientist</td>
                       </tr>
                       <tr>
-                        <td>sdasd</td>
-                        <td>asdasd</td>
-                        <td>asdasd</td>
-                        <td>asdasd</td>
+                        <td>Mohan</td>
+                        <td>I201, Louisville, West Dillion Road</td>
+                        <td>27</td>
+                        <td>Android Developer</td>
                       </tr>
                       <tr>
-                        <td>sdasd</td>
-                        <td>asdasd</td>
-                        <td>asdasd</td>
-                        <td>asdasd</td>
+                        <td>Niranjan</td>
+                        <td>7234, Colorado Springs, North Academy Blvd</td>
+                        <td>28</td>
+                        <td>iOS Developer</td>
                       </tr>
                     </tbody>
                   </table>
@@ -541,7 +594,7 @@
       </div>
     </div>
   </body>
-  <script src="index.js"></script>
+  <script src="flexmaster.js"></script>
   <script>
     /* Menu */
     (function () {
@@ -551,13 +604,24 @@
           [...menuItem].map((removeItem) =>
             removeItem.classList.remove("active")
           );
+          let currentItem = e.currentTarget.hash,
+            targetComponent = currentItem.replace("#", ""),
+            fmTab = document.querySelectorAll(".fm-tab");
+          [...fmTab].map((item) => {
+            item.style.display = "none";
+          });
+          document.querySelector(`#${targetComponent}`).style.display = "block";
           e.target.classList.add("active");
         });
       });
     })();
 
     /* Tab */
-    let tabOne = document.getElementById("tab");
+    let tabOne = document.getElementById("tab-name");
     $(tabOne).tabs();
+
+    /* Accordion */
+    let accOne = document.getElementById("collapsible");
+    $(accOne).accordion();
   </script>
 </html>
