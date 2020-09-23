@@ -10,14 +10,15 @@
       type="image/png"
     />
     <link rel="stylesheet" href="css/flexmaster.css" />
+    <link rel="stylesheet" href="css/prettify.css" />
+
+    <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
     <title>Flex Master</title>
   </head>
   <style>
     .doc-header {
-      background-color: #141414;
       position: relative;
       background-image: linear-gradient(-135deg, #680f4b, #fe5264);
-      /* background: #f7e8cf; */
       padding: 0;
     }
     .doc-header-content {
@@ -47,7 +48,6 @@
       /* text-shadow: 1px 1px 0px #262829; */
     }
     .doc-features {
-      background: rgba(242, 242, 242, 0.07);
       min-height: 120px;
       /* position: sticky; */
       /* top: 0; */
@@ -65,10 +65,11 @@
     }
     .doc-features img {
       height: 48px;
-      margin-bottom: 1rem;
+      margin-bottom: 0.875rem;
     }
     .doc-feature-item {
-      padding: 20px 0;
+      padding: 25px 0;
+      background: rgba(0, 0, 0, 0.07);
     }
     .doc-body {
       padding: 25px 0;
@@ -117,13 +118,58 @@
       transition: 0.25s ease-in-out;
     }
     .fm-tab {
-      min-height: 800px;
+      /* min-height: 800px; */
     }
     .fm-tab:not(:first-child) {
       display: none;
     }
+    .code-wrapper {
+      margin-top: 15px;
+    }
+    .code-wrapper .code {
+      padding: 1.5rem;
+      margin-top: -16px;
+      display: block;
+    }
+    .code-wrapper pre {
+      background-color: #43436a;
+      border-radius: 5px;
+      border: none !important;
+    }
+    .code-wrapper .tag {
+      color: #ed7077;
+    }
+    .code-wrapper .atn {
+      color: #c792ea;
+    }
+    .code-wrapper .pun {
+      color: #89ddff;
+    }
+    .code-wrapper .atv {
+      color: #c3e88d;
+    }
+    .code-wrapper .pln {
+      color: #eeffff;
+    }
+    .code-wrapper .kwd {
+      color: #c792ea;
+    }
+    .code-wrapper .str {
+      color: #c3e88d;
+    }
+    .code-wrapper .com {
+      color: #546e7a;
+    }
+    @media (max-width: 576px) {
+      .fm-tab {
+        display: block !important;
+      }
+      .doc-menu {
+        display: none;
+      }
+    }
   </style>
-  <body>
+  <body onload="PR.prettyPrint()">
     <div class="wrapper-fluid doc-header">
       <div class="wrapper component-section">
         <div class="grid-wrapper doc-header-content">
@@ -137,6 +183,7 @@
               </h4>
             </span>
             <div class="grid-12 button-wrapper">
+              <button class="button white">Get Started</button>
               <button class="button white">Download</button>
             </div>
           </div>
@@ -163,7 +210,7 @@
             </div>
             <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
               <img src="images/docs/responsive.png" alt="" />
-              <h6>Responsive</h6>
+              <h6>SASS</h6>
             </div>
             <div class="grid-6 grid-sm-4 grid-md-2 doc-feature-item">
               <img src="images/docs/responsive.png" alt="" />
@@ -177,11 +224,14 @@
     <div class="wrapper-fluid doc-body">
       <div class="wrapper">
         <div class="grid-wrapper">
-          <div class="grid-3 grid-sm-2">
+          <div class="grid-sm-2">
             <div class="doc-menu">
               <ul>
                 <li>
-                  <a class="active" href="#grid">Grid</a>
+                  <a class="active" href="#getting-started">Getting Started</a>
+                </li>
+                <li>
+                  <a href="#grid">Grid</a>
                 </li>
                 <li><a href="#card">Card</a></li>
                 <li><a href="#buttons">Buttons</a></li>
@@ -193,7 +243,33 @@
               </ul>
             </div>
           </div>
-          <div class="grid-9 grid-sm-10">
+          <div class="grid-12 grid-sm-10">
+            <div id="getting-started" class="component-section fm-tab">
+              <div class="grid-wrapper">
+                <div class="grid-12">
+                  <h4>Getting Started</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Necessitatibus ex fugit autem aliquid enim. Quas facilis ad
+                    rem ex animi sint quasi fugiat tempora aliquid amet fuga
+                    omnis, blanditiis sequi!
+                  </p>
+                </div>
+              </div>
+              <div class="grid-wrapper code-wrapper">
+                <div class="grid-12">
+                  <figure>
+                    <pre class="prettyprint"><code class="code">
+<!-- CSS --> 
+<link rel="stylesheet" type="text/css" href="css/flexmaster.css" />
+
+<!-- Javascript -->
+<script src="js/flexmaster.js"></script>
+</code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
             <div id="grid" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
@@ -207,77 +283,100 @@
                   </p>
                 </div>
               </div>
+
               <div class="grid-wrapper grid-example">
-                <div class="grid-12">
+                <div class="grid-12 inline-flex justify-center">
                   <p>grid-12</p>
                 </div>
               </div>
               <div class="grid-wrapper grid-example">
-                <div class="grid-12 grid-sm-6">
+                <div class="grid-12 grid-sm-6 inline-flex justify-center">
                   <p>grid-6</p>
                 </div>
-                <div class="grid-12 grid-sm-6">
+                <div class="grid-12 grid-sm-6 inline-flex justify-center">
                   <p>grid-6</p>
                 </div>
               </div>
               <div class="grid-wrapper grid-example">
-                <div class="grid-12 grid-sm-7">
+                <div class="grid-12 grid-sm-7 inline-flex justify-center">
                   <p>grid-7</p>
                 </div>
-                <div class="grid-12 grid-sm-5">
+                <div class="grid-12 grid-sm-5 inline-flex justify-center">
                   <p>grid-5</p>
                 </div>
               </div>
               <div class="grid-wrapper grid-example">
-                <div class="grid-12 grid-sm-8">
+                <div class="grid-12 grid-sm-8 inline-flex justify-center">
                   <p>grid-8</p>
                 </div>
-                <div class="grid-12 grid-sm-4">
+                <div class="grid-12 grid-sm-4 inline-flex justify-center">
                   <p>grid-4</p>
                 </div>
               </div>
               <div class="grid-wrapper grid-example">
-                <div class="grid-12 grid-sm-9">
+                <div class="grid-12 grid-sm-9 inline-flex justify-center">
                   <p>grid-9</p>
                 </div>
-                <div class="grid-12 grid-sm-3">
+                <div class="grid-12 grid-sm-3 inline-flex justify-center">
                   <p>grid-3</p>
                 </div>
               </div>
               <div class="grid-wrapper grid-example">
-                <div class="grid-12 grid-sm-10">
+                <div class="grid-12 grid-sm-10 inline-flex justify-center">
                   <p>grid-10</p>
                 </div>
-                <div class="grid-12 grid-sm-2">
+                <div class="grid-12 grid-sm-2 inline-flex justify-center">
                   <p>grid-2</p>
                 </div>
               </div>
-              <div class="grid-wrapper grid-example">
-                <div class="grid-12 grid-sm-4">
+              <div class="grid-wrapper grid-example code-example">
+                <div class="grid-12 grid-sm-4 inline-flex justify-center">
                   <p>grid-4</p>
                 </div>
-                <div class="grid-12 grid-sm-4">
+                <div class="grid-12 grid-sm-4 inline-flex justify-center">
                   <p>grid-4</p>
                 </div>
-                <div class="grid-12 grid-sm-4">
+                <div class="grid-12 grid-sm-4 inline-flex justify-center">
                   <p>grid-4</p>
                 </div>
               </div>
               <div class="grid-wrapper grid-example">
-                <div class="grid-12 grid-sm-3">
+                <div class="grid-12 grid-sm-3 inline-flex justify-center">
                   <p>grid-3</p>
                 </div>
-                <div class="grid-12 grid-sm-3">
+                <div class="grid-12 grid-sm-3 inline-flex justify-center">
                   <p>grid-3</p>
                 </div>
-                <div class="grid-12 grid-sm-3">
+                <div class="grid-12 grid-sm-3 inline-flex justify-center">
                   <p>grid-3</p>
                 </div>
-                <div class="grid-12 grid-sm-3">
+                <div class="grid-12 grid-sm-3 inline-flex justify-center">
                   <p>grid-3</p>
+                </div>
+              </div>
+
+              <div class="grid-wrapper code-wrapper">
+                <div class="grid-12">
+                  <figure>
+                    <pre class="prettyprint"><code class="code">
+<div class="grid-12 grid-sm-3">
+  <p>grid-3</p>
+</div>
+<div class="grid-12 grid-sm-3">
+  <p>grid-3</p>
+</div>
+<div class="grid-12 grid-sm-3">
+  <p>grid-3</p>
+</div>
+<div class="grid-12 grid-sm-3">
+  <p>grid-3</p>
+</div>
+</code></pre>
+                  </figure>
                 </div>
               </div>
             </div>
+
             <div id="card" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
@@ -289,7 +388,9 @@
                     itaque odio eveniet repellendus ducimus sequi!
                   </p>
                 </div>
+              </div>
 
+              <div class="grid-wrapper">
                 <div class="grid-12 grid-sm-6 grid-md-4">
                   <div class="card">
                     <div class="card-image">
@@ -351,7 +452,35 @@
                   </div>
                 </div>
               </div>
+
+              <div class="grid-wrapper code-wrapper">
+                <div class="grid-12">
+                  <figure>
+                    <pre class="prettyprint"><code class="code">
+<div class="card">
+  <div class="card-image">
+    <img src="images/docs/1280x960.png" alt="" />
+  </div>
+  <div class="card-content">
+    <h4>Title</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Magni nisi facere ducimus.
+    </p>
+    <div class="button-wrapper">
+      <button class="button primary fluid">Primary</button>
+      <button class="button secondary fluid">
+        Secondary
+      </button>
+    </div>
+  </div>
+</div>
+</code></pre>
+                  </figure>
+                </div>
+              </div>
             </div>
+
             <div id="buttons" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
@@ -364,7 +493,9 @@
                     magni dignissimos.
                   </p>
                 </div>
+              </div>
 
+              <div class="grid-wrapper">
                 <div class="grid-12">
                   <div class="button-wrapper">
                     <button class="button solid">Default</button>
@@ -379,7 +510,28 @@
                   </div>
                 </div>
               </div>
+
+              <div class="grid-wrapper code-wrapper">
+                <div class="grid-12">
+                  <figure>
+                    <pre class="prettyprint"><code class="code">
+<div class="button-wrapper">
+  <button class="button solid">Default</button>
+  <button class="button primary">Primary</button>
+  <button class="button secondary">Secondary</button>
+  <button class="button primary solid">Primary</button>
+  <button class="button secondary solid">Secondary</button>
+  <button class="button error">Primary</button>
+  <button class="button info">Secondary</button>
+  <button class="button error solid">Primary</button>
+  <button class="button info solid">Secondary</button>
+</div>
+</code></pre>
+                  </figure>
+                </div>
+              </div>
             </div>
+
             <div id="typography" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
@@ -392,7 +544,9 @@
                     magni dignissimos.
                   </p>
                 </div>
+              </div>
 
+              <div class="grid-wrapper">
                 <div class="grid-12">
                   <h1>Header 1</h1>
                   <h2>Header 2</h2>
@@ -402,7 +556,25 @@
                   <h6>Header 6</h6>
                 </div>
               </div>
+
+              <div class="grid-wrapper code-wrapper">
+                <div class="grid-12">
+                  <figure>
+                    <pre class="prettyprint"><code class="code">
+<div class="grid-12">
+  <h1>Header 1</h1>
+  <h2>Header 2</h2>
+  <h3>Header 3</h3>
+  <h4>Header 4</h4>
+  <h5>Header 5</h5>
+  <h6>Header 6</h6>
+</div>
+</code></pre>
+                  </figure>
+                </div>
+              </div>
             </div>
+
             <div id="alerts" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
@@ -415,7 +587,8 @@
                     magni dignissimos.
                   </p>
                 </div>
-
+              </div>
+              <div class="grid-wrapper">
                 <div class="grid-12">
                   <div class="alert primary">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -432,6 +605,7 @@
                 </div>
               </div>
             </div>
+
             <div id="tabs" class="component-section fm-tab">
               <div class="grid-wrapper">
                 <div class="grid-12">
@@ -444,7 +618,9 @@
                     magni dignissimos.
                   </p>
                 </div>
+              </div>
 
+              <div class="grid-wrapper">
                 <div class="grid-12">
                   <div id="tab-name" class="tabs">
                     <div class="tab-header">
@@ -485,6 +661,59 @@
                   </div>
                 </div>
               </div>
+
+              <div class="grid-wrapper code-wrapper">
+                <div class="grid-12">
+                  <figure>
+                    <pre class="prettyprint"><code class="code">
+<div id="myTab" class="tabs">
+  <div class="tab-header">
+    <ul>
+      <li>Tab 1</li>
+      <li>Tab 2</li>
+      <li>Tab 3</li>
+    </ul>
+  </div>
+  <div class="tab-content">
+    <div class="tab-child">
+      Tab 1 ipsum dolor sit amet consectetur, adipisicing
+      elit. Quibusdam sunt blanditiis natus ad, porro facere
+      totam voluptate dolores optio explicabo, excepturi
+      quisquam odio quos nihil molestias reprehenderit rerum
+      corporis mollitia. Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Magni nesciunt odit
+      corrupti ducimus temporibus, perferendis dicta, tenetur
+      tempora laudantium fuga a laboriosam aut! Perspiciatis
+      nihil laudantium natus optio, ea quam!
+    </div>
+    <div class="tab-child">
+      ipsum dolor sit amet consectetur, adipisicing elit.
+      Quibusdam sunt blanditiis natus ad, porro facere totam
+      voluptate dolores optio explicabo, excepturi quisquam
+      odio quos nihil molestias reprehenderit rerum corporis
+      mollitia.
+    </div>
+    <div class="tab-child">
+      Tab 3 ipsum dolor sit amet consectetur, adipisicing
+      elit. Quibusdam sunt blanditiis natus ad, porro facere
+      totam voluptate dolores optio explicabo, excepturi
+      quisquam odio quos nihil molestias reprehenderit rerum
+      corporis mollitia. excepturi quisquam odio quos nihil
+      molestias reprehenderit rerum corporis mollitia.
+    </div>
+  </div>
+</div>
+</code></pre>
+
+                    <pre class="prettyprint"><code class="code">
+<script>
+  let myTab = document.getElementById("my-tab");
+  $(myTab).tabs();
+</script>
+</code></pre>
+                  </figure>
+                </div>
+              </div>
             </div>
 
             <div id="accordion" class="component-section fm-tab">
@@ -499,7 +728,9 @@
                     magni dignissimos.
                   </p>
                 </div>
+              </div>
 
+              <div class="grid-wrapper">
                 <div class="grid-12">
                   <div id="collapsible" class="accordion">
                     <ul>
@@ -537,6 +768,55 @@
                   </div>
                 </div>
               </div>
+
+              <div class="grid-wrapper code-wrapper">
+                <div class="grid-12">
+                  <figure>
+                    <pre class="prettyprint"><code class="code">
+<div id="myAccordion" class="accordion">
+  <ul>
+    <li>
+      <div class="accordion-head">Accordion 1</div>
+      <div class="accordion-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ab unde doloribus similique aspernatur eos culpa
+        voluptatum vel nisi molestias quae temporibus modi
+        officia dolore at aperiam, perferendis id itaque
+        quasi.
+      </div>
+    </li>
+    <li>
+      <div class="accordion-head">Accordion 2</div>
+      <div class="accordion-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Libero, asperiores suscipit placeat atque
+        deleniti quod, voluptatibus a voluptas at incidunt
+        repudiandae, soluta illo et amet praesentium? Dicta
+        maiores repudiandae similique.
+      </div>
+    </li>
+    <li>
+      <div class="accordion-head">Accordion 3</div>
+      <div class="accordion-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Assumenda aspernatur sapiente quae ea quaerat,
+        dolores nemo sunt aut rem tempore possimus quam
+        eligendi tenetur adipisci molestias facilis officiis
+        sit recusandae.
+      </div>
+    </li>
+  </ul>
+</div>
+</code></pre>
+                    <pre class="prettyprint"><code class="code">
+<script>
+  let myAccordion = document.getElementById("myAccordion");
+  $(myAccordion).accordion();
+</script>
+</code></pre>
+                  </figure>
+                </div>
+              </div>
             </div>
 
             <div id="table" class="component-section fm-tab">
@@ -551,7 +831,9 @@
                     magni dignissimos.
                   </p>
                 </div>
+              </div>
 
+              <div class="grid-wrapper">
                 <div class="grid-12">
                   <table class="table">
                     <thead>
@@ -591,13 +873,59 @@
                   </table>
                 </div>
               </div>
+
+              <div class="grid-wrapper code-wrapper">
+                <div class="grid-12">
+                  <figure>
+                    <pre class="prettyprint"><code class="code">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Age</th>
+      <th>Designation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arun</td>
+      <td>C210, Lakewood, West Alamada Avenue</td>
+      <td>29</td>
+      <td>UI Developer</td>
+    </tr>
+    <tr>
+      <td>Sugan</td>
+      <td>1245, North Boulder, Alpine Avenue</td>
+      <td>28</td>
+      <td>Data Scientist</td>
+    </tr>
+    <tr>
+      <td>Mohan</td>
+      <td>I201, Louisville, West Dillion Road</td>
+      <td>27</td>
+      <td>Android Developer</td>
+    </tr>
+    <tr>
+      <td>Niranjan</td>
+      <td>7234, Colorado Springs, North Academy Blvd</td>
+      <td>28</td>
+      <td>iOS Developer</td>
+    </tr>
+  </tbody>
+</table>
+</code></pre>
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="flexmaster.js"></script>
+  <script src="js/prettify.js"></script>
+  <script src="js/flexmaster.js"></script>
   <script>
     /* Menu */
     (function () {
@@ -626,5 +954,19 @@
     /* Accordion */
     let accOne = document.getElementById("collapsible");
     $(accOne).accordion();
+
+    /* HTML to Code Tag */
+    let rawStr = document.querySelectorAll(".code");
+
+    [...rawStr].map((item) => {
+      console.log(item);
+      let outputStr = item.innerHTML.replace(
+        /[\u00A0-\u9999<>\&]/gim,
+        function (i) {
+          return "&#" + i.charCodeAt(0) + ";";
+        }
+      );
+      item.innerHTML = outputStr;
+    });
   </script>
 </html>

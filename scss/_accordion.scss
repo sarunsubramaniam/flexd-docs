@@ -3,7 +3,7 @@
     padding-left: 0;
     li {
       list-style: none;
-      border: 1px solid $grey-grade--1;
+      border: 1px solid $outline;
       &:not(:first-child) {
         border-top: none;
       }
