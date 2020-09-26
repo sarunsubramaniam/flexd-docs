@@ -15,6 +15,7 @@ export default function Menu() {
         <li data-id="table">Table</li>
         <li data-id="tabs">Tabs</li>
         <li data-id="typography">Typography</li>
+        <li data-id="inputs">Inputs</li>
       </ul>
     </div>
   );

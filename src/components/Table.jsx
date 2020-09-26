@@ -97,6 +97,7 @@ export default function Table(props) {
       <div className="grid-wrapper code-wrapper">
         <div className="grid-12">
           <figure>
+            <figcaption>HTML</figcaption>
             <pre className="">
               <code className="language-html">{tableSnippet}</code>
             </pre>

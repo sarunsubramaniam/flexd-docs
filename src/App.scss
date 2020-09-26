@@ -1,0 +1,148 @@
+.doc-header {
+  position: relative;
+  background-image: linear-gradient(45deg, #680f4b, #fe5264);
+  padding: 0;
+  .doc-header-content {
+    text-align: center;
+    color: #fff;
+    min-height: 320px;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-weight: 100;
+      width: 80%;
+      margin: 15px auto;
+    }
+    img {
+      height: 125px;
+      max-width: 100%;
+    }
+    .button-wrapper {
+      justify-content: center;
+    }
+  }
+  h4 {
+    span {
+      font-weight: 700;
+      padding: 0 8px;
+    }
+  }
+  .doc-features {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    h6 {
+      font-weight: 100;
+      font-size: 0.875rem;
+      margin: 0;
+      color: #fff;
+    }
+    img {
+      height: 48px;
+      margin-bottom: 0.875rem;
+    }
+    .doc-feature-item {
+      padding: 25px 0;
+      background: rgba(242, 242, 242, 0.05);
+    }
+  }
+}
+
+.component-section {
+  padding: 20px 15px;
+  .grid-example {
+    padding: 0 15px;
+    div[class*="grid-"] {
+      padding: 0;
+      margin-bottom: 10px;
+    }
+    div[class*="grid-"] p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+      min-height: 42px;
+      background-color: #efefef;
+      width: calc(100% - 10px);
+      border-radius: 10px;
+    }
+  }
+}
+
+.doc-body {
+  padding: 25px 0;
+  .doc-menu {
+    position: sticky;
+    top: 10px;
+    ul {
+      padding: 20px 0;
+      li {
+        cursor: pointer;
+        list-style: none;
+        font-size: 1.5em;
+        color: rgba(68, 68, 68, 0.25);
+        transition: 0.25s ease-in-out;
+        text-decoration: none;
+        &.active {
+          color: rgba(68, 68, 68, 1);
+          transition: 0.25s ease-in-out;
+        }
+      }
+    }
+  }
+  .fm-tab:not(:first-child) {
+    display: none;
+  }
+}
+
+.code-wrapper {
+  margin-top: 15px;
+  code {
+    padding: 1.5rem;
+    display: block;
+    color: #eeffff;
+  }
+  pre {
+    background-color: #263238;
+    border-radius: 5px;
+    border: none !important;
+  }
+  .tag {
+    color: #ed7077;
+  }
+  .attr-name,
+  .punctuation.attr-equals,
+  .keyword {
+    color: #c792ea;
+  }
+  .punctuation {
+    color: #89ddff;
+  }
+  .attr-value,
+  .string {
+    color: #c3e88d;
+  }
+  .comment {
+    color: #546e7a;
+  }
+  .operator {
+    color: #89ddff;
+  }
+  .function {
+    color: #82aaff;
+  }
+}
+
+@media (max-width: 576px) {
+  .fm-tab {
+    display: block !important;
+  }
+  .doc-menu {
+    display: none;
+  }
+}
+
+/* Framework Styles */
+
+/* End of Framework Styles */

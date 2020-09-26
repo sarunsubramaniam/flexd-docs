@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import "./App.css";
 import "./css/flexmaster.css";
+import "./App.scss";
 import Prism from "prismjs";
 import Grid from "./components/Grid";
 import Card from "./components/Card";
@@ -10,6 +10,7 @@ import Alerts from "./components/Alerts";
 import Tabs from "./components/Tabs";
 import Accordion from "./components/Accordion";
 import Table from "./components/Table";
+import Inputs from "./components/Inputs";
 import GetStarted from "./components/GetStarted";
 import Menu from "./components/Menu";
 import LandingSection from "./components/LandingSection";
@@ -59,6 +60,7 @@ function App() {
               <Table componentName="table" />
               <Tabs componentName="tabs" />
               <Typography componentName="typography" />
+              <Inputs componentName="inputs" />
             </div>
           </div>
         </div>

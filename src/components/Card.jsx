@@ -98,6 +98,7 @@ export default function Card(props) {
       <div className="grid-wrapper code-wrapper">
         <div className="grid-12">
           <figure>
+            <figcaption>HTML</figcaption>
             <pre className="">
               <code className="language-html">{cardSnippet}</code>
             </pre>

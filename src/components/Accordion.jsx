@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import $ from "../flexmaster";
+import $ from "../js/flexmaster";
 
 // const $ = window.$;
 
@@ -99,9 +99,11 @@ $(myAccordion).accordion();`;
       <div className="grid-wrapper code-wrapper">
         <div className="grid-12">
           <figure>
+            <figcaption>HTML</figcaption>
             <pre className="">
               <code className="language-html">{accordionHTMLSnippet}</code>
             </pre>
+            <figcaption>Javascript</figcaption>
             <pre className="">
               <code className="language-js">{accordionJSSnippet}</code>
             </pre>

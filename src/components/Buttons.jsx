@@ -45,6 +45,7 @@ export default function Buttons(props) {
       <div className="grid-wrapper code-wrapper">
         <div className="grid-12">
           <figure>
+            <figcaption>HTML</figcaption>
             <pre className="">
               <code className="language-html">{buttonSnippet}</code>
             </pre>

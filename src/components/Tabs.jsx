@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import $ from "../flexmaster";
+import $ from "../js/flexmaster";
 
 export default function Tabs(props) {
   useEffect(() => {
@@ -100,9 +100,11 @@ $(myTab).tabs();`;
       <div className="grid-wrapper code-wrapper">
         <div className="grid-12">
           <figure>
+            <figcaption>HTML</figcaption>
             <pre className="">
               <code className="language-html">{tabHTMLSnippet}</code>
             </pre>
+            <figcaption>Javascript</figcaption>
             <pre className="">
               <code className="language-js">{tabJSSnippet}</code>
             </pre>
