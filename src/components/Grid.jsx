@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Grid() {
+export default function Grid(props) {
   const gridSnippet = `<div class="grid-sm-3">
   <p>grid-3</p>
 </div>
@@ -14,7 +14,7 @@ export default function Grid() {
   <p>grid-3</p>
 </div>`;
   return (
-    <div id="grid" className="component-section fm-tab">
+    <div id={props.componentName} className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Grid</h4>

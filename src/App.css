@@ -1,6 +1,6 @@
 .doc-header {
   position: relative;
-  background-image: linear-gradient(-135deg, #680f4b, #fe5264);
+  background-image: linear-gradient(45deg, #680f4b, #fe5264);
   padding: 0;
 }
 .doc-header-content {

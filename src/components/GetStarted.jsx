@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function GetStarted() {
+export default function GetStarted(props) {
   const getStartedSnippet = `<!-- CSS -->
 <link rel="stylesheet" type="text/css" href="css/flexmaster.css" />
 
 <!-- Javascript -->
 <script src="js/flexmaster.js"></script>`;
   return (
-    <div id="getting-started" className="component-section fm-tab">
+    <div id={props.componentName} className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Getting Started</h4>

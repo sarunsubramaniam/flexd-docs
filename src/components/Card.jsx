@@ -1,29 +1,29 @@
 import React from "react";
 import placeholderImage from "../images/docs/1280x960.png";
 
-export default function Card() {
+export default function Card(props) {
   const cardSnippet = `<div class="card">
-<div class="card-image">
-  <img src={placeholderImage} alt={altText} />
-</div>
-<div class="card-content">
-  <h4>Title</h4>
-  <p>
-    Lorem ipsum dolor sit amet consectetur,
-    adipisicing elit. Magni nisi facere ducimus.
-  </p>
-  <div class="button-wrapper">
-    <button class="button primary fluid">
-      Primary
-    </button>
-    <button class="button secondary fluid">
-      Secondary
-    </button>
+  <div class="card-image">
+    <img src={placeholderImage} alt={altText} />
   </div>
-</div>
+  <div class="card-content">
+    <h4>Title</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur,
+      adipisicing elit. Magni nisi facere ducimus.
+    </p>
+    <div class="button-wrapper">
+      <button class="button primary fluid">
+        Primary
+      </button>
+      <button class="button secondary fluid">
+        Secondary
+      </button>
+    </div>
+  </div>
 </div>`;
   return (
-    <div id="card" className="component-section fm-tab">
+    <div id={props.componentName} className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Cards</h4>

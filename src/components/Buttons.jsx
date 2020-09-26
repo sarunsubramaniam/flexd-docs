@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Buttons() {
+export default function Buttons(props) {
   const buttonSnippet = `<div class="button-wrapper">
   <button class="button solid">Default</button>
   <button class="button primary">Primary</button>
@@ -13,7 +13,7 @@ export default function Buttons() {
   <button class="button info solid">Secondary</button>
 </div>`;
   return (
-    <div id="buttons" className="component-section fm-tab">
+    <div id={props.componentName} className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Buttons</h4>

@@ -1,10 +1,10 @@
 @keyframes grow {
   from {
-    height: 0px;
-    width: 0;
+    transform: scale(0);
+    opacity: 0;
   }
   to {
-    height: 4px;
-    width: 4px;
+    transform: scale(1);
+    opacity: 1;
   }
 }

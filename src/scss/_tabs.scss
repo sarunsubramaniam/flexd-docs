@@ -1,6 +1,5 @@
 .tabs {
   .tab-header {
-    // border-bottom: 1px solid $grey-grade--1;
     ul {
       padding-left: 0;
       margin: 0;
@@ -36,6 +35,7 @@
             height: 4px;
             background-color: $text-color-grade--1;
             animation: grow 0.25s ease-in forwards;
+            transform-origin: center;
             animation-iteration-count: 1;
             border-radius: 50%;
             margin: 0 auto;
@@ -47,8 +47,8 @@
   .tab-content {
     padding: 1rem;
     border: 1px solid $outline;
-    // border-top: none;
-    border-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     .tab-child {
       &:not(:first-child) {
         display: none;

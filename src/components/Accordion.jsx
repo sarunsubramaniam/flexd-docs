@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
+import $ from "../flexmaster";
 
-export default function Accordion() {
-  useEffect(() => {});
+// const $ = window.$;
+
+export default function Accordion(props) {
+  useEffect(() => {
+    let accOne = document.getElementById("collapsible");
+    $(accOne).accordion();
+  });
   const accordionHTMLSnippet = `<div id="myAccordion" className="accordion">
   <ul>
     <li>

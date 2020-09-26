@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Table() {
+export default function Table(props) {
   const tableSnippet = `<table className="table">
   <thead>
     <tr>
@@ -40,7 +40,7 @@ export default function Table() {
   </tbody>
 </table>`;
   return (
-    <div id="table" className="component-section fm-tab">
+    <div id={props.componentName} className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Table</h4>

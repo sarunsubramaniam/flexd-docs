@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Typography() {
+export default function Typography(props) {
   const typographySnippet = `<div class="grid-12">
   <h1>Header 1</h1>
   <h2>Header 2</h2>
@@ -10,7 +10,7 @@ export default function Typography() {
   <h6>Header 6</h6>
 </div>`;
   return (
-    <div id="typography" className="component-section fm-tab">
+    <div id={props.componentName} className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Typography</h4>

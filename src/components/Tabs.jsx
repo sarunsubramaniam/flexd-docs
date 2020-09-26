@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import $ from "../flexmaster";
 
-export default function Tabs() {
+export default function Tabs(props) {
+  useEffect(() => {
+    let tabOne = document.getElementById("tab-name");
+    $(tabOne).tabs();
+  });
   const tabHTMLSnippet = `<div id="myTab" className="tabs">
   <div className="tab-header">
     <ul>
@@ -39,7 +44,7 @@ export default function Tabs() {
   const tabJSSnippet = `let myTab = document.getElementById("myTab");
 $(myTab).tabs();`;
   return (
-    <div id="tabs" className="component-section fm-tab">
+    <div id={props.componentName} className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Tabs</h4>

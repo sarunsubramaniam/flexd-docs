@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import "./scss/flexmaster.scss";
+import "./css/flexmaster.css";
 import Prism from "prismjs";
 import Grid from "./components/Grid";
 import Card from "./components/Card";
@@ -14,6 +14,7 @@ import GetStarted from "./components/GetStarted";
 import Menu from "./components/Menu";
 import LandingSection from "./components/LandingSection";
 import FeatureSection from "./components/FeatureSection";
+
 function App() {
   useEffect(() => {
     /* Menu */
@@ -49,15 +50,15 @@ function App() {
               <Menu />
             </div>
             <div className="grid-12 grid-sm-10">
-              <GetStarted />
-              <Grid />
-              <Accordion />
-              <Alerts />
-              <Buttons />
-              <Card />
-              <Table />
-              <Tabs />
-              <Typography />
+              <GetStarted componentName="getting-started" />
+              <Grid componentName="grid" />
+              <Accordion componentName="accordion" />
+              <Alerts componentName="alerts" />
+              <Buttons componentName="buttons" />
+              <Card componentName="card" />
+              <Table componentName="table" />
+              <Tabs componentName="tabs" />
+              <Typography componentName="typography" />
             </div>
           </div>
         </div>
