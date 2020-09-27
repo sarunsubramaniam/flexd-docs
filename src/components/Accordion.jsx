@@ -6,7 +6,9 @@ import $ from "../js/flexmaster";
 export default function Accordion(props) {
   useEffect(() => {
     let accOne = document.getElementById("collapsible");
-    $(accOne).accordion();
+    $(accOne).accordion(function () {
+      alert("123");
+    });
   });
   const accordionHTMLSnippet = `<div id="myAccordion" className="accordion">
   <ul>
@@ -65,7 +67,9 @@ $(myAccordion).accordion();`;
           <div id="collapsible" className="accordion">
             <ul>
               <li>
-                <div className="accordion-head">Accordion 1</div>
+                <div className="accordion-head">
+                  Accordion 1<i className="fas fa-angle-down"></i>
+                </div>
                 <div className="accordion-body">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
                   unde doloribus similique aspernatur eos culpa voluptatum vel
@@ -74,7 +78,9 @@ $(myAccordion).accordion();`;
                 </div>
               </li>
               <li>
-                <div className="accordion-head">Accordion 2</div>
+                <div className="accordion-head">
+                  Accordion 2<i className="fas fa-angle-down"></i>
+                </div>
                 <div className="accordion-body">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Libero, asperiores suscipit placeat atque deleniti quod,
@@ -83,7 +89,9 @@ $(myAccordion).accordion();`;
                 </div>
               </li>
               <li>
-                <div className="accordion-head">Accordion 3</div>
+                <div className="accordion-head">
+                  Accordion 3<i className="fas fa-angle-down"></i>
+                </div>
                 <div className="accordion-body">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Assumenda aspernatur sapiente quae ea quaerat, dolores nemo

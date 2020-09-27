@@ -18,15 +18,19 @@ export default function Alerts(props) {
         <div className="grid-12">
           <div className="alert primary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <i className="fas fa-times"></i>
           </div>
           <div className="alert success">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <i className="fas fa-times"></i>
           </div>
           <div className="alert warning">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <i className="fas fa-times"></i>
           </div>
           <div className="alert error">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <i className="fas fa-times"></i>
           </div>
         </div>
       </div>

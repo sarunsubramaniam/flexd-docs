@@ -1,10 +1,13 @@
 import React from "react";
 
 export default function GetStarted(props) {
-  const getStartedSnippet = `<!-- CSS -->
+  const getStartedSnippet = `<!-- Flexmaster CSS -->
 <link rel="stylesheet" type="text/css" href="css/flexmaster.css" />
 
-<!-- Javascript -->
+<!-- Fontawesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+<!-- Flexmaster Javascript -->
 <script src="js/flexmaster.js"></script>`;
   return (
     <div id={props.componentName} className="component-section fm-tab">

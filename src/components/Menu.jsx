@@ -1,21 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Menu() {
+  const [menuItem, setMenuItem] = useState([
+    { name: "Get Started", id: "getting-started" },
+    { name: "Grid", id: "grid" },
+    { name: "Accordion", id: "accordion" },
+    { name: "Alerts", id: "alerts" },
+    { name: "Buttons", id: "buttons" },
+    { name: "Card", id: "card" },
+    { name: "Table", id: "table" },
+    { name: "Tabs", id: "tabs" },
+    { name: "Typography", id: "typography" },
+    { name: "Inputs", id: "inputs" },
+  ]);
+
   return (
     <div className="doc-menu">
       <ul>
-        <li className="active" data-id="getting-started">
-          Getting Started
-        </li>
-        <li data-id="grid">Grid</li>
-        <li data-id="accordion">Accordion</li>
-        <li data-id="alerts">Alerts</li>
-        <li data-id="buttons">Buttons</li>
-        <li data-id="card">Card</li>
-        <li data-id="table">Table</li>
-        <li data-id="tabs">Tabs</li>
-        <li data-id="typography">Typography</li>
-        <li data-id="inputs">Inputs</li>
+        {menuItem.map((item, idx) => {
+          return (
+            <li
+              key={idx}
+              className={idx === 0 ? "active" : null}
+              data-id={item.id}
+            >
+              {item.name}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
