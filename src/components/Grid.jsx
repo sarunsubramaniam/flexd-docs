@@ -14,7 +14,7 @@ export default function Grid(props) {
   <p>grid-3</p>
 </div>`;
   return (
-    <div id={props.componentName} className="component-section fm-tab">
+    <div id="grid" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Grid</h4>

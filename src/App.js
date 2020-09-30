@@ -1,20 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import "./css/flexmaster.css";
 import "./App.scss";
 import Prism from "prismjs";
-import Grid from "./components/Grid";
-import Card from "./components/Card";
-import Buttons from "./components/Buttons";
-import Typography from "./components/Typography";
-import Alerts from "./components/Alerts";
-import Tabs from "./components/Tabs";
-import Accordion from "./components/Accordion";
-import Table from "./components/Table";
-import Inputs from "./components/Inputs";
-import GetStarted from "./components/GetStarted";
+import ComponentGroup from "./components/ComponentGroup";
 import Menu from "./components/Menu";
 import LandingSection from "./components/LandingSection";
 import FeatureSection from "./components/FeatureSection";
+import { DataProvider } from "./Context";
 
 function App() {
   useEffect(() => {
@@ -40,31 +32,24 @@ function App() {
   });
   return (
     <React.Fragment>
-      <div className="wrapper-fluid doc-header">
-        <LandingSection />
-        <FeatureSection />
-      </div>
-      <div className="wrapper-fluid doc-body">
-        <div className="wrapper">
-          <div className="grid-wrapper">
-            <div className="grid-sm-2">
-              <Menu />
-            </div>
-            <div className="grid-12 grid-sm-10">
-              <GetStarted componentName="getting-started" />
-              <Grid componentName="grid" />
-              <Accordion componentName="accordion" />
-              <Alerts componentName="alerts" />
-              <Buttons componentName="buttons" />
-              <Card componentName="card" />
-              <Table componentName="table" />
-              <Tabs componentName="tabs" />
-              <Typography componentName="typography" />
-              <Inputs componentName="inputs" />
+      <DataProvider>
+        <div className="wrapper-fluid doc-header">
+          <LandingSection />
+          <FeatureSection />
+        </div>
+        <div className="wrapper-fluid doc-body">
+          <div className="wrapper">
+            <div className="grid-wrapper">
+              <div className="grid-sm-2">
+                <Menu />
+              </div>
+              <div className="grid-12 grid-sm-10">
+                <ComponentGroup />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </DataProvider>
     </React.Fragment>
   );
 }

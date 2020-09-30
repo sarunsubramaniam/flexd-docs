@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Alerts(props) {
   return (
-    <div id={props.componentName} className="component-section fm-tab">
+    <div id="alerts" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Alerts</h4>

@@ -23,7 +23,7 @@ export default function Card(props) {
   </div>
 </div>`;
   return (
-    <div id={props.componentName} className="component-section fm-tab">
+    <div id="card" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Cards</h4>

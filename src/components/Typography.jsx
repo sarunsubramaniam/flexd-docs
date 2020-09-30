@@ -10,7 +10,7 @@ export default function Typography(props) {
   <h6>Header 6</h6>
 </div>`;
   return (
-    <div id={props.componentName} className="component-section fm-tab">
+    <div id="typography" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Typography</h4>

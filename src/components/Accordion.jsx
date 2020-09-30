@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import $ from "../js/flexmaster";
 
-// const $ = window.$;
-
 export default function Accordion(props) {
   useEffect(() => {
     let accOne = document.getElementById("collapsible");

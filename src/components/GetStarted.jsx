@@ -10,7 +10,7 @@ export default function GetStarted(props) {
 <!-- Flexmaster Javascript -->
 <script src="js/flexmaster.js"></script>`;
   return (
-    <div id={props.componentName} className="component-section fm-tab">
+    <div id="getting-started" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Getting Started</h4>

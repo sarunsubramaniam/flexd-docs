@@ -50,7 +50,7 @@ export default function Inputs(props) {
   <button className="button primary solid">Save</button>
 </div>`;
   return (
-    <div id={props.componentName} className="component-section fm-tab">
+    <div id="inputs" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
           <h4>Inputs</h4>
