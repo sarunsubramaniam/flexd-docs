@@ -47,7 +47,7 @@ $(myTab).tabs();`;
     <div id="tabs" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h4>Tabs</h4>
+          <h3 className="section-title blue">Tabs</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
             repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo
@@ -57,8 +57,9 @@ $(myTab).tabs();`;
         </div>
       </div>
 
-      <div className="grid-wrapper">
-        <div className="grid-12">
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Example</h5>
           <div id="tab-name" className="tabs">
             <div className="tab-header">
               <ul>
@@ -97,18 +98,22 @@ $(myTab).tabs();`;
         </div>
       </div>
 
-      <div className="grid-wrapper code-wrapper">
-        <div className="grid-12">
-          <figure>
-            <figcaption>HTML</figcaption>
-            <pre className="">
-              <code className="language-html">{tabHTMLSnippet}</code>
-            </pre>
-            <figcaption>Javascript</figcaption>
-            <pre className="">
-              <code className="language-js">{tabJSSnippet}</code>
-            </pre>
-          </figure>
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Implementation</h5>
+          <div className="grid-wrapper code-wrapper">
+            <div className="grid-12">
+              <figure>
+                <pre>
+                  <code className="language-html">{tabHTMLSnippet}</code>
+                </pre>
+
+                <pre>
+                  <code className="language-js">{tabJSSnippet}</code>
+                </pre>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </div>

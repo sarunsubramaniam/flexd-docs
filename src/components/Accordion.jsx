@@ -50,7 +50,7 @@ $(myAccordion).accordion();`;
     <div id="accordion" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h4>Accordion</h4>
+          <h3 className="section-title blue">Accordion</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
             repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo
@@ -60,13 +60,14 @@ $(myAccordion).accordion();`;
         </div>
       </div>
 
-      <div className="grid-wrapper">
-        <div className="grid-12">
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Example</h5>
           <div id="collapsible" className="accordion">
             <ul>
               <li>
                 <div className="accordion-head">
-                  Accordion 1<i className="fas fa-angle-down"></i>
+                  Accordion 1<i className="fa fa-angle-down"></i>
                 </div>
                 <div className="accordion-body">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
@@ -77,7 +78,7 @@ $(myAccordion).accordion();`;
               </li>
               <li>
                 <div className="accordion-head">
-                  Accordion 2<i className="fas fa-angle-down"></i>
+                  Accordion 2<i className="fa fa-angle-down"></i>
                 </div>
                 <div className="accordion-body">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -88,7 +89,7 @@ $(myAccordion).accordion();`;
               </li>
               <li>
                 <div className="accordion-head">
-                  Accordion 3<i className="fas fa-angle-down"></i>
+                  Accordion 3<i className="fa fa-angle-down"></i>
                 </div>
                 <div className="accordion-body">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -101,19 +102,21 @@ $(myAccordion).accordion();`;
           </div>
         </div>
       </div>
-
-      <div className="grid-wrapper code-wrapper">
-        <div className="grid-12">
-          <figure>
-            <figcaption>HTML</figcaption>
-            <pre className="">
-              <code className="language-html">{accordionHTMLSnippet}</code>
-            </pre>
-            <figcaption>Javascript</figcaption>
-            <pre className="">
-              <code className="language-js">{accordionJSSnippet}</code>
-            </pre>
-          </figure>
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Implementation</h5>
+          <div className="grid-wrapper code-wrapper">
+            <div className="grid-12">
+              <figure>
+                <pre>
+                  <code className="language-html">{accordionHTMLSnippet}</code>
+                </pre>
+                <pre>
+                  <code className="language-js">{accordionJSSnippet}</code>
+                </pre>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </div>

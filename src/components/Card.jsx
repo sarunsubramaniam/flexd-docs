@@ -26,7 +26,7 @@ export default function Card(props) {
     <div id="card" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h4>Cards</h4>
+          <h3 className="section-title blue">Cards</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
             eligendi voluptates dolor odio fuga beatae quod non hic cupiditate
@@ -36,73 +36,85 @@ export default function Card(props) {
         </div>
       </div>
 
-      <div className="grid-wrapper">
-        <div className="grid-12 grid-sm-6 grid-md-4">
-          <div className="card">
-            <div className="card-image">
-              <img src={placeholderImage} alt="" />
-            </div>
-            <div className="card-content">
-              <h4>Title</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-                nisi facere ducimus.
-              </p>
-              <div className="button-wrapper">
-                <button className="button primary fluid">Primary</button>
-                <button className="button secondary fluid">Secondary</button>
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Example</h5>
+          <div className="grid-wrapper">
+            <div className="grid-12 grid-sm-6 grid-md-4">
+              <div className="card">
+                <div className="card-image">
+                  <img src={placeholderImage} alt="" />
+                </div>
+                <div className="card-content">
+                  <h4>Title</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Magni nisi facere ducimus.
+                  </p>
+                  <div className="button-wrapper">
+                    <button className="button primary fluid">Primary</button>
+                    <button className="button secondary fluid">
+                      Secondary
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="grid-12 grid-sm-6 grid-md-4">
-          <div className="card">
-            <div className="card-image">
-              <img src={placeholderImage} alt="" />
-            </div>
-            <div className="card-content">
-              <h4>Title</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-                nisi facere ducimus.
-              </p>
-              <div className="button-wrapper">
-                <button className="button primary solid fluid">Primary</button>
-                <button className="button secondary solid fluid">
-                  Secondary
-                </button>
+            <div className="grid-12 grid-sm-6 grid-md-4">
+              <div className="card">
+                <div className="card-image">
+                  <img src={placeholderImage} alt="" />
+                </div>
+                <div className="card-content">
+                  <h4>Title</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Magni nisi facere ducimus.
+                  </p>
+                  <div className="button-wrapper">
+                    <button className="button primary solid fluid">
+                      Primary
+                    </button>
+                    <button className="button secondary solid fluid">
+                      Secondary
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="grid-12 grid-sm-6 grid-md-4">
-          <div className="card">
-            <div className="card-image">
-              <img src={placeholderImage} alt="" />
-            </div>
-            <div className="card-content">
-              <h4>Title</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-                nisi facere ducimus.
-              </p>
-              <div className="button-wrapper">
-                <button className="button info solid fluid">Info</button>
-                <button className="button error solid fluid">Error</button>
+            <div className="grid-12 grid-sm-6 grid-md-4">
+              <div className="card">
+                <div className="card-image">
+                  <img src={placeholderImage} alt="" />
+                </div>
+                <div className="card-content">
+                  <h4>Title</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Magni nisi facere ducimus.
+                  </p>
+                  <div className="button-wrapper">
+                    <button className="button info solid fluid">Info</button>
+                    <button className="button error solid fluid">Error</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div className="grid-wrapper code-wrapper">
-        <div className="grid-12">
-          <figure>
-            <figcaption>HTML</figcaption>
-            <pre className="">
-              <code className="language-html">{cardSnippet}</code>
-            </pre>
-          </figure>
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Implementation</h5>
+          <div className="grid-wrapper code-wrapper">
+            <div className="grid-12">
+              <figure>
+                <pre>
+                  <code className="language-html">{cardSnippet}</code>
+                </pre>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </div>

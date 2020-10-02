@@ -43,7 +43,7 @@ export default function Table(props) {
     <div id="table" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h4>Table</h4>
+          <h3 className="section-title blue">Table</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
             repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo
@@ -53,8 +53,9 @@ export default function Table(props) {
         </div>
       </div>
 
-      <div className="grid-wrapper">
-        <div className="grid-12">
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Example</h5>
           <table className="table">
             <thead>
               <tr>
@@ -94,14 +95,18 @@ export default function Table(props) {
         </div>
       </div>
 
-      <div className="grid-wrapper code-wrapper">
-        <div className="grid-12">
-          <figure>
-            <figcaption>HTML</figcaption>
-            <pre className="">
-              <code className="language-html">{tableSnippet}</code>
-            </pre>
-          </figure>
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Implementation</h5>
+          <div className="grid-wrapper code-wrapper">
+            <div className="grid-12">
+              <figure>
+                <pre>
+                  <code className="language-html">{tableSnippet}</code>
+                </pre>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </div>

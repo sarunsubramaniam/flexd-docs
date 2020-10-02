@@ -16,7 +16,7 @@ export default function Buttons(props) {
     <div id="buttons" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h4>Buttons</h4>
+          <h3 className="section-title blue">Buttons</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
             repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo
@@ -26,8 +26,9 @@ export default function Buttons(props) {
         </div>
       </div>
 
-      <div className="grid-wrapper">
-        <div className="grid-12">
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Example</h5>
           <div className="button-wrapper">
             <button className="button solid">Default</button>
             <button className="button primary">Primary</button>
@@ -41,15 +42,18 @@ export default function Buttons(props) {
           </div>
         </div>
       </div>
-
-      <div className="grid-wrapper code-wrapper">
-        <div className="grid-12">
-          <figure>
-            <figcaption>HTML</figcaption>
-            <pre className="">
-              <code className="language-html">{buttonSnippet}</code>
-            </pre>
-          </figure>
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Implementation</h5>
+          <div className="grid-wrapper code-wrapper">
+            <div className="grid-12">
+              <figure>
+                <pre>
+                  <code className="language-html">{buttonSnippet}</code>
+                </pre>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </div>

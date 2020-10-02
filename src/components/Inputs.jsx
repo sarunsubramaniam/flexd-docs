@@ -39,21 +39,12 @@ export default function Inputs(props) {
     <label htmlFor="">Country</label>
     <input type="text" placeholder="Country" />
   </div>
-</div>
-
-<div className="input-field">
-  <label htmlFor="">Summary</label>
-  <textarea name="" id="" cols="30" rows="10"></textarea>
-</div>
-<div className="button-wrapper justify-flex-end">
-  <button className="button solid">Cancel</button>
-  <button className="button primary solid">Save</button>
 </div>`;
   return (
     <div id="inputs" className="component-section fm-tab">
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h4>Inputs</h4>
+          <h3 className="section-title blue">Inputs</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
             repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo
@@ -62,8 +53,9 @@ export default function Inputs(props) {
           </p>
         </div>
       </div>
-      <div className="grid-wrapper input-wrapper">
-        <div className="grid-12">
+      <div className="grid-wrapper card input-wrapper">
+        <div className="grid-12 card-content">
+          <h5>Example</h5>
           <div className="input-fields">
             <div className="input-field">
               <label htmlFor="">First Name</label>
@@ -103,25 +95,20 @@ export default function Inputs(props) {
               <input type="text" placeholder="Country" />
             </div>
           </div>
-
-          <div className="input-field">
-            <label htmlFor="">Summary</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
-          <div className="button-wrapper justify-flex-end">
-            <button className="button solid">Cancel</button>
-            <button className="button primary solid">Save</button>
-          </div>
         </div>
       </div>
-      <div className="grid-wrapper code-wrapper">
-        <div className="grid-12">
-          <figure>
-            <figcaption>HTML</figcaption>
-            <pre className="">
-              <code className="language-html">{inputSnippet}</code>
-            </pre>
-          </figure>
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <h5>Implementation</h5>
+          <div className="grid-wrapper code-wrapper">
+            <div className="grid-12">
+              <figure>
+                <pre>
+                  <code className="language-html">{inputSnippet}</code>
+                </pre>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </div>

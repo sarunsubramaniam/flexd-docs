@@ -1,6 +1,6 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState } from "react";
 import GetStarted from "./components/GetStarted";
-import Grid from "./components/Grid";
+import Layout from "./components/Layout";
 import Card from "./components/Card";
 import Buttons from "./components/Buttons";
 import Typography from "./components/Typography";
@@ -13,18 +13,18 @@ import Inputs from "./components/Inputs";
 export const DataConsumer = createContext();
 export const DataProvider = (props) => {
   const [data, setData] = useState([
-    {
-      id: 1,
-      dataId: "getting-started",
-      name: "Get Started",
-      component: <GetStarted />,
-      display: true,
-    },
+    // {
+    //   id: 1,
+    //   dataId: "getting-started",
+    //   name: "Get Started",
+    //   component: <GetStarted />,
+    //   display: true,
+    // },
     {
       id: 2,
-      dataId: "grid",
-      name: "Grid",
-      component: <Grid />,
+      dataId: "layout",
+      name: "Layout",
+      component: <Layout />,
       display: true,
     },
     {

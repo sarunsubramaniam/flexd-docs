@@ -1,32 +1,38 @@
 import React from "react";
-import ban from "../images/docs/ban.png";
-import cube from "../images/docs/cube.png";
-import magic from "../images/docs/magic.png";
-import responsive from "../images/docs/responsive.png";
+import JQueryIcon from "../images/docs/jQuery.svg";
+import FlexIcon from "../images/docs/cube.svg";
+import SassIcon from "../images/docs/sass.svg";
+import ElegantIcon from "../images/docs/elegance.svg";
+import DeviceIcon from "../images/docs/responsive.svg";
+import GitIcon from "../images/docs/git.svg";
 
-export default function FeatureSection() {
+export default function Features() {
   return (
     <div className="wrapper-fluid doc-features">
       <div className="wrapper">
         <div className="grid-wrapper">
           <div className="grid-6 grid-md doc-feature-item">
-            <img src={responsive} alt="" />
+            <img src={DeviceIcon} />
             <h6>Responsive</h6>
           </div>
           <div className="grid-6 grid-md doc-feature-item">
-            <img src={cube} alt="" />
+            <img src={FlexIcon} />
             <h6>Flexbox</h6>
           </div>
           <div className="grid-6 grid-md doc-feature-item">
-            <img src={magic} alt="" />
+            <img src={ElegantIcon} />
             <h6>Elegant UI</h6>
           </div>
           <div className="grid-6 grid-md doc-feature-item">
-            <img src={ban} alt="" />
+            <img src={JQueryIcon} />
             <h6>jQuery Free</h6>
           </div>
           <div className="grid-6 grid-md doc-feature-item">
-            <img src={responsive} alt="" />
+            <img src={GitIcon} />
+            <h6>Open Source</h6>
+          </div>
+          <div className="grid-6 grid-md doc-feature-item">
+            <img src={SassIcon} />
             <h6>SASS</h6>
           </div>
         </div>
