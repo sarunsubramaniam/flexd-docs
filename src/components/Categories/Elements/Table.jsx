@@ -40,7 +40,7 @@ export default function Table(props) {
   </tbody>
 </table>`;
   return (
-    <div id="table" className="component-section fm-tab">
+    <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
           <h3 className="section-title blue">Table</h3>
@@ -109,6 +109,6 @@ export default function Table(props) {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }

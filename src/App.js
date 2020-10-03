@@ -1,9 +1,9 @@
 import React from "react";
 import "./css/flexmaster.css";
 import "./App.scss";
-import { DataProvider } from "./Context";
-import Landing from "./components/Landing";
-import Body from "./components/Body";
+import { DataProvider } from "./components/Context/Context";
+import Landing from "./components/Common/Landing";
+import Body from "./components/Common/Body";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Router>
           <Switch>
             <Route path="/" component={Landing} exact />
-            <Route path="/components" component={Body} />
+            <Route path="/get-started" component={Body} />
           </Switch>
         </Router>
       </DataProvider>

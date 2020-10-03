@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import $ from "../js/flexmaster";
+import $ from "../../../js/flexmaster";
 
 export default function Tabs(props) {
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function Tabs(props) {
   const tabJSSnippet = `let myTab = document.getElementById("myTab");
 $(myTab).tabs();`;
   return (
-    <div id="tabs" className="component-section fm-tab">
+    <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
           <h3 className="section-title blue">Tabs</h3>
@@ -116,6 +116,6 @@ $(myTab).tabs();`;
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }

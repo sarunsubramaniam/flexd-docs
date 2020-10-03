@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Layout(props) {
+export default function Grid(props) {
   const gridSnippet = `<div class="grid-sm-3">
   <p>grid-3</p>
 </div>
@@ -14,10 +14,10 @@ export default function Layout(props) {
   <p>grid-3</p>
 </div>`;
   return (
-    <div id="layout" className="component-section fm-tab">
+    <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h3 className="section-title blue">Layout</h3>
+          <h3 className="section-title blue">Grid</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
             repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo
@@ -151,6 +151,6 @@ export default function Layout(props) {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }

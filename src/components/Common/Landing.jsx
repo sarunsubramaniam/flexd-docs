@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import Prism from "prismjs";
-import logo from "../images/docs/logo.svg";
+import logo from "../../images/docs/logo.svg";
 import Features from "./Features";
 import { Link } from "react-router-dom";
-import GetStarted from "./GetStarted";
 import Header from "./Header";
 
 export default function Landing() {
@@ -26,7 +25,7 @@ export default function Landing() {
                 </h4>
               </span>
               <div className="grid-12 button-wrapper">
-                <Link className="button link large" to="/components">
+                <Link className="button link large" to="/get-started">
                   Get Flexd<i className="fa fa-angle-right"></i>
                 </Link>
                 <Link className="button link large">
@@ -38,15 +37,6 @@ export default function Landing() {
         </div>
       </div>
       <Features />
-      <div className="wrapper-fluid doc-body">
-        <div className="wrapper">
-          <div className="grid-wrapper">
-            <div className="grid-12 grid-sm-12">
-              <GetStarted />
-            </div>
-          </div>
-        </div>
-      </div>
     </React.Fragment>
   );
 }

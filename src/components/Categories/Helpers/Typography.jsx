@@ -10,7 +10,7 @@ export default function Typography(props) {
   <h6>Header 6</h6>
 </div>`;
   return (
-    <div id="typography" className="component-section fm-tab">
+    <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
           <h3 className="section-title blue">Typography</h3>
@@ -48,6 +48,6 @@ export default function Typography(props) {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }

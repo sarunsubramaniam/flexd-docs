@@ -1,21 +1,20 @@
 import React from "react";
 
-export default function GetStarted(props) {
-  const getStartedSnippet = `<!-- Flexmaster CSS -->
-<link rel="stylesheet" type="text/css" href="css/flexmaster.css" />
-
-<!-- Fontawesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-
-<!-- Flexmaster Javascript -->
-<script src="js/flexmaster.js"></script>`;
-
+export default function Overview(props) {
   return (
-    <div id="getting-started" className="component-section fm-tab">
-      <h3 className="section-title blue">Getting Started</h3>
+    <React.Fragment>
+      <h3 className="section-title blue">Overview</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maxime
+        blanditiis harum eius temporibus tempora dolore quisquam libero ea
+        doloribus reiciendis, laborum suscipit impedit provident asperiores cum
+        quidem minus laboriosam vel totam nesciunt, aliquam dolor. Asperiores
+        possimus aut consequatur quaerat maxime, culpa perferendis eveniet. At,
+        debitis soluta quas a consequatur aperiam provident non laboriosam
+        praesentium accusamus placeat veritatis minima fugit in!
+      </p>
       <div className="grid-wrapper card">
         <div className="grid-12 card-content">
-          <h4>Include Flexd</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
             maxime blanditiis harum eius temporibus tempora dolore quisquam
@@ -39,19 +38,6 @@ export default function GetStarted(props) {
           </p>
         </div>
       </div>
-      <div className="grid-wrapper card">
-        <div className="grid-12 card-content">
-          <div className="grid-wrapper code-wrapper">
-            <div className="grid-12">
-              <figure>
-                <pre>
-                  <code className="language-html">{getStartedSnippet}</code>
-                </pre>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </React.Fragment>
   );
 }

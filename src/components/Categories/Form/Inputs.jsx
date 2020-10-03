@@ -41,7 +41,7 @@ export default function Inputs(props) {
   </div>
 </div>`;
   return (
-    <div id="inputs" className="component-section fm-tab">
+    <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
           <h3 className="section-title blue">Inputs</h3>
@@ -111,6 +111,6 @@ export default function Inputs(props) {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }

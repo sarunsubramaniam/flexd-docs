@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/docs/icon.svg";
+import logo from "../../images/docs/icon.svg";
 import { Link } from "react-router-dom";
 
 export default function Header(props) {
@@ -15,16 +15,20 @@ export default function Header(props) {
             </div>
             <div className="nav-menu">
               <ul>
-                <li>Docs</li>
                 <li>
-                  <i className="fa fa-github" aria-hidden="true"></i>
+                  <Link to="/">Home</Link>
                 </li>
-
+                <li>
+                  <Link to="/get-started">Documentation</Link>
+                </li>
                 {props.button === true ? (
                   <li className="button-wrapper">
                     <Link className="button white">Download</Link>
                   </li>
                 ) : null}
+                <li>
+                  <i className="fa fa-github" aria-hidden="true"></i>
+                </li>
               </ul>
             </div>
           </div>

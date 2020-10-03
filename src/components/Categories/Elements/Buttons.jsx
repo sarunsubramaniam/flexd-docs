@@ -13,7 +13,7 @@ export default function Buttons(props) {
   <button class="button info solid">Secondary</button>
 </div>`;
   return (
-    <div id="buttons" className="component-section fm-tab">
+    <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
           <h3 className="section-title blue">Buttons</h3>
@@ -56,6 +56,6 @@ export default function Buttons(props) {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }

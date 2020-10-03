@@ -1,17 +1,21 @@
+$white: #fff;
+$black: #000;
+$headerSpan: 70px;
+
 body {
   background: #fafafa;
 }
 header {
-  height: 70px;
+  height: $headerSpan;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: $white;
   &.opaque {
-    background: #000;
+    background: $black;
     position: fixed;
   }
   &.transparent {
@@ -36,8 +40,18 @@ header {
         display: inline-flex;
         align-items: center;
         padding: 0 15px;
+        font-weight: 500;
+        a {
+          color: #f5f5f7;
+          opacity: 0.8;
+          text-decoration: none;
+          &:hover {
+            color: $white;
+            opacity: 1;
+          }
+        }
         i {
-          font-size: 1.75rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -46,17 +60,17 @@ header {
 
 .doc-landing {
   position: relative;
-  // background-image: linear-gradient(45deg, #680f4b, #fe5264);
-  background: #000;
+  background: $black;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 600px;
+  // min-height: 600px;
+  min-height: calc(100vh - 118px);
 
   .doc-landing-content {
     text-align: center;
-    color: #fff;
+    color: $white;
     justify-content: center;
 
     h4 {
@@ -102,6 +116,75 @@ header {
   }
 }
 
+.category-tabs {
+  text-align: center;
+  background: #f4f4f5;
+  position: sticky;
+  top: $headerSpan;
+  z-index: 1;
+  h6 {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+  img {
+    height: 32px;
+    margin-bottom: 0.875rem;
+  }
+  i {
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+  }
+  .category-tab {
+    padding: 25px 0;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    &.active {
+      background-color: rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+      pointer-events: none;
+    }
+    @keyframes grow {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    $variations: "flexd-red" "#E4632B", "flexd-blue-dark" "#0B6FFB",
+      "flexd-yellow" "#FFAB2E", "flexd-green" "#36CD77",
+      "flexd-orange" "#E4632B", "flexd-blue-light" "#56B5F9";
+    @each $class, $color in $variations {
+      &.#{$class} {
+        &.active {
+          &:after {
+            content: "";
+            background: #{$color};
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 10px;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            margin: 0 auto;
+            animation: grow 0.25s forwards;
+          }
+        }
+      }
+    }
+  }
+
+  .grid-wrapper {
+    border-radius: 20px;
+  }
+}
+
 .component-section {
   padding: 15px 10px;
   .grid-example {
@@ -124,14 +207,14 @@ header {
 }
 
 .header-offset {
-  height: 70px;
+  height: $headerSpan;
 }
 
 .doc-body {
   padding: 25px 0;
   .doc-menu {
     position: sticky;
-    top: 100px;
+    top: 170px;
     ul {
       padding: 10px 0;
       li {
@@ -154,7 +237,6 @@ header {
 }
 
 .code-wrapper {
-  // margin-top: 15px;
   figure {
     position: relative;
     margin: 0;
@@ -217,36 +299,20 @@ header {
     bottom: 5px;
     width: 2px;
   }
-  &.blue {
-    &:before {
-      background: #0b6ffb;
-    }
-    &:after {
-      background: #084498;
-    }
-  }
-  &.yellow {
-    &:before {
-      background: #ffab2e;
-    }
-    &:after {
-      background: #905907;
-    }
-  }
-  &.orange {
-    &:before {
-      background: #e4632b;
-    }
-    &:after {
-      background: #713115;
-    }
-  }
-  &.green {
-    &:before {
-      background: #36cd77;
-    }
-    &:after {
-      background: #1b663b;
+}
+
+$colors: "flexd-blue-dark" "#0b6ffb" "#084498",
+  "flexd-yellow" "#ffab2e" "#905907", "flexd-orange" "#e4632b" "#713115",
+  "flexd-green" "#36cd77" "#1b663b", "flexd-blue-light" "#56B5F9" "#2B5A7C";
+@each $class, $before, $after in $colors {
+  &.#{$class} {
+    .section-title {
+      &:before {
+        background: #{$before};
+      }
+      &:after {
+        background: #{$after};
+      }
     }
   }
 }

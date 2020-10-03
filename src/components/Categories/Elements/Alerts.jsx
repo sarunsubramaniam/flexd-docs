@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Alerts(props) {
   return (
-    <div id="alerts" className="component-section fm-tab">
+    <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
           <h3 className="section-title blue">Alerts</h3>
@@ -35,6 +35,6 @@ export default function Alerts(props) {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }

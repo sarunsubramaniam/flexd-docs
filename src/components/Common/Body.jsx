@@ -1,15 +1,15 @@
 import React from "react";
-import Menu from "./Menu";
-import ComponentGroup from "./ComponentGroup";
+import Menu from "../Categories/Menu/Menu";
+import ComponentGroup from "../Categories/ComponentGroup";
 import Header from "./Header";
-import Features from "./Features";
+import CategoryTab from "../Categories/Tab/CategoryTab";
 
 export default function Body() {
   return (
     <React.Fragment>
       <Header theme="opaque" button={true} />
       <div className="header-offset"></div>
-      {/* <Features /> */}
+      <CategoryTab />
 
       <div className="wrapper-fluid doc-body">
         <div className="wrapper">

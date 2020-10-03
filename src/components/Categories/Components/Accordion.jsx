@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import $ from "../js/flexmaster";
+import $ from "../../../js/flexmaster";
 
 export default function Accordion(props) {
   useEffect(() => {
     let accOne = document.getElementById("collapsible");
-    $(accOne).accordion(function () {
-      alert("123");
-    });
+    $(accOne).accordion();
   });
   const accordionHTMLSnippet = `<div id="myAccordion" className="accordion">
   <ul>
@@ -47,7 +45,7 @@ export default function Accordion(props) {
   const accordionJSSnippet = `let myAccordion = document.getElementById("myAccordion");
 $(myAccordion).accordion();`;
   return (
-    <div id="accordion" className="component-section fm-tab">
+    <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
           <h3 className="section-title blue">Accordion</h3>
@@ -119,6 +117,6 @@ $(myAccordion).accordion();`;
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }

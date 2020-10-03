@@ -1,5 +1,5 @@
 import React from "react";
-import placeholderImage from "../images/docs/1280x960.png";
+import placeholderImage from "../../../images/docs/1280x960.png";
 
 export default function Card(props) {
   const cardSnippet = `<div class="card">
@@ -23,7 +23,7 @@ export default function Card(props) {
   </div>
 </div>`;
   return (
-    <div id="card" className="component-section fm-tab">
+    <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
           <h3 className="section-title blue">Cards</h3>
@@ -117,6 +117,6 @@ export default function Card(props) {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
