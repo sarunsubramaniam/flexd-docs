@@ -257,10 +257,20 @@ header {
   .tag {
     color: #ed7077;
   }
+  .doctype {
+    .doctype-tag {
+      color: #ed7077;
+    }
+    .name {
+      color: #c792ea;
+      font-style: italic;
+    }
+  }
   .attr-name,
   .punctuation.attr-equals,
   .keyword {
     color: #c792ea;
+    font-style: italic;
   }
   .punctuation {
     color: #89ddff;

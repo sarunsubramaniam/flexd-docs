@@ -48,7 +48,7 @@ $(myAccordion).accordion();`;
     <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h3 className="section-title blue">Accordion</h3>
+          <h3 className="section-title">Accordion</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
             repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo

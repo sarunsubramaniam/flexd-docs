@@ -1,18 +1,18 @@
 import React from "react";
 
 export default function QuickStart(props) {
-  const getStartedSnippet = `<!-- Flexmaster CSS -->
-<link rel="stylesheet" type="text/css" href="css/flexmaster.css" />
+  const cssSnippet = `<!-- Flexd CSS -->
+<link rel="stylesheet" type="text/css" href="css/flexmaster.css" />`;
 
-<!-- Fontawesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  const fontAwesomeSnippet = `<!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />`;
 
-<!-- Flexmaster Javascript -->
+  const jsSnippet = `<!-- Flexd Javascript -->
 <script src="js/flexmaster.js"></script>`;
 
   return (
     <React.Fragment>
-      <h3 className="section-title blue">Quick Start</h3>
+      <h3 className="section-title">Quick Start</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maxime
         blanditiis harum eius temporibus tempora dolore quisquam libero ea
@@ -35,13 +35,63 @@ export default function QuickStart(props) {
           </p>
         </div>
       </div>
+
       <div className="grid-wrapper card">
         <div className="grid-12 card-content">
           <div className="grid-wrapper code-wrapper">
             <div className="grid-12">
+              <h4>CSS</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+                maxime blanditiis harum eius temporibus tempora dolore quisquam
+                libero ea doloribus reiciendis, laborum suscipit impedit
+                provident
+              </p>
               <figure>
                 <pre>
-                  <code className="language-html">{getStartedSnippet}</code>
+                  <code className="language-html">{cssSnippet}</code>
+                </pre>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <div className="grid-wrapper code-wrapper">
+            <div className="grid-12">
+              <h4>Javascript</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+                maxime blanditiis harum eius temporibus tempora dolore quisquam
+                libero ea doloribus reiciendis, laborum suscipit impedit
+                provident
+              </p>
+              <figure>
+                <pre>
+                  <code className="language-html">{jsSnippet}</code>
+                </pre>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid-wrapper card">
+        <div className="grid-12 card-content">
+          <div className="grid-wrapper code-wrapper">
+            <div className="grid-12">
+              <h4>Font Awesome CDN</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+                maxime blanditiis harum eius temporibus tempora dolore quisquam
+                libero ea doloribus reiciendis, laborum suscipit impedit
+                provident
+              </p>
+              <figure>
+                <pre>
+                  <code className="language-html">{fontAwesomeSnippet}</code>
                 </pre>
               </figure>
             </div>

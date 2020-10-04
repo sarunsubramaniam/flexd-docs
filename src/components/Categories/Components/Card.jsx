@@ -26,7 +26,7 @@ export default function Card(props) {
     <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h3 className="section-title blue">Cards</h3>
+          <h3 className="section-title">Cards</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
             eligendi voluptates dolor odio fuga beatae quod non hic cupiditate

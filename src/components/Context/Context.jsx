@@ -1,5 +1,7 @@
 import React, { createContext, useState } from "react";
 import Grid from "../Categories/Layout/Grid";
+import Breakpoints from "../Categories/Layout/Breakpoints";
+import Wrapper from "../Categories/Layout/Wrapper";
 import Card from "../Categories/Components/Card";
 import QuickStart from "../Categories/GetStarted/QuickStart";
 import Overview from "../Categories/GetStarted/Overview";
@@ -10,6 +12,7 @@ import Tabs from "../Categories/Components/Tabs";
 import Accordion from "../Categories/Components/Accordion";
 import Table from "../Categories/Elements/Table";
 import Inputs from "../Categories/Form/Inputs";
+import Scaffold from "../Categories/GetStarted/Scaffold";
 
 export const DataConsumer = createContext();
 export const DataProvider = (props) => {
@@ -34,6 +37,15 @@ export const DataProvider = (props) => {
         category: "Get Started",
         theme: "flexd-orange",
       },
+      {
+        id: 2,
+        dataId: "scaffold",
+        name: "Scaffold",
+        component: <Scaffold />,
+        display: true,
+        category: "Get Started",
+        theme: "flexd-orange",
+      },
     ],
     layout: [
       {
@@ -41,6 +53,24 @@ export const DataProvider = (props) => {
         dataId: "grid",
         name: "Grid",
         component: <Grid />,
+        display: true,
+        category: "Layout",
+        theme: "flexd-blue-dark",
+      },
+      {
+        id: 3,
+        dataId: "wrapper",
+        name: "Wrapper",
+        component: <Wrapper />,
+        display: true,
+        category: "Layout",
+        theme: "flexd-blue-dark",
+      },
+      {
+        id: 3,
+        dataId: "breakpoints",
+        name: "Breakpoints",
+        component: <Breakpoints />,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",

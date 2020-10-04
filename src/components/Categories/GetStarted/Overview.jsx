@@ -3,7 +3,7 @@ import React from "react";
 export default function Overview(props) {
   return (
     <React.Fragment>
-      <h3 className="section-title blue">Overview</h3>
+      <h3 className="section-title">Overview</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maxime
         blanditiis harum eius temporibus tempora dolore quisquam libero ea

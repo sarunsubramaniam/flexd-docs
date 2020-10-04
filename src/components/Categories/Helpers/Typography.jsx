@@ -13,7 +13,7 @@ export default function Typography(props) {
     <React.Fragment>
       <div className="grid-wrapper">
         <div className="grid-12">
-          <h3 className="section-title blue">Typography</h3>
+          <h3 className="section-title">Typography</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
             repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo
