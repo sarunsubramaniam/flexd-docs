@@ -1,26 +1,23 @@
 import React, { useContext, useEffect } from "react";
 import { DataConsumer } from "../../Context/Context";
+import { Link } from "react-router-dom";
 
 export default function CategoryTab() {
   useEffect(() => {});
   const [data, setData] = useContext(DataConsumer);
   const onButtonClick = (e) => {
-    let categoryTab = document.querySelectorAll(".category-tab");
-    let fmTab = document.querySelectorAll(".fm-tab");
-    [...fmTab].forEach((item, i) => {
-      i === 0 ? (item.style.display = "block") : (item.style.display = "none");
-      [...categoryTab].forEach((tab, i) => {
-        tab.classList.remove("active");
-      });
-    });
-
-    e.currentTarget.classList.add("active");
-
-    let currentTab = e.currentTarget.getAttribute("data-id");
+    let currentTab = e.currentTarget.getAttribute("data-id"),
+      menuItems = document.querySelectorAll(".doc-menu ul li a");
 
     if (e.currentTarget.getAttribute("data-id") === currentTab) {
       setData((prev) => ({ ...prev, page: currentTab }));
     }
+
+    [...menuItems].forEach((item, idx) => {
+      idx === 0
+        ? item.classList.add("active")
+        : item.classList.remove("active");
+    });
   };
   return (
     <div className="wrapper-fluid category-tabs">
@@ -37,7 +34,9 @@ export default function CategoryTab() {
                 data-id={key}
                 onClick={onButtonClick}
               >
-                <h6>{value[0].category}</h6>
+                <Link to={`/documentation/${key}/${value[0].dataId}`}>
+                  <h6>{value[0].category}</h6>
+                </Link>
               </div>
             );
           })}

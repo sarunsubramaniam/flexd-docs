@@ -19,7 +19,9 @@ export default function Header(props) {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/get-started">Documentation</Link>
+                  <Link to="/documentation/getStarted/overview">
+                    Documentation
+                  </Link>
                 </li>
                 {props.button === true ? (
                   <li className="button-wrapper">

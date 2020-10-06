@@ -12,6 +12,7 @@ import Tabs from "../Categories/Components/Tabs";
 import Accordion from "../Categories/Components/Accordion";
 import Table from "../Categories/Elements/Table";
 import Inputs from "../Categories/Form/Inputs";
+import Textarea from "../Categories/Form/Textarea";
 import Scaffold from "../Categories/GetStarted/Scaffold";
 
 export const DataConsumer = createContext();
@@ -140,6 +141,15 @@ export const DataProvider = (props) => {
         dataId: "inputs",
         name: "Inputs",
         component: <Inputs />,
+        display: true,
+        category: "Form",
+        theme: "flexd-orange",
+      },
+      {
+        id: 10,
+        dataId: "textarea",
+        name: "Textarea",
+        component: <Textarea />,
         display: true,
         category: "Form",
         theme: "flexd-orange",

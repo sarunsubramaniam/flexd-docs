@@ -2,13 +2,13 @@ import React from "react";
 
 export default function QuickStart(props) {
   const cssSnippet = `<!-- Flexd CSS -->
-<link rel="stylesheet" type="text/css" href="css/flexmaster.css" />`;
+<link rel="stylesheet" type="text/css" href="css/flexd.css" />`;
 
   const fontAwesomeSnippet = `<!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />`;
 
   const jsSnippet = `<!-- Flexd Javascript -->
-<script src="js/flexmaster.js"></script>`;
+<script src="js/flexd.js"></script>`;
 
   return (
     <React.Fragment>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import $ from "../../../js/flexmaster";
+import $ from "../../../js/flexd";
 
 export default function Tabs(props) {
   useEffect(() => {

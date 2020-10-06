@@ -135,16 +135,22 @@ header {
     margin-bottom: 0.5rem;
   }
   .category-tab {
-    padding: 25px 0;
     cursor: pointer;
     position: relative;
+    padding: 0;
+
+    a {
+      display: flex;
+      justify-content: center;
+      padding: 25px 0;
+      color: $black;
+      text-decoration: none;
+    }
     &:hover {
       background-color: rgba(0, 0, 0, 0.05);
     }
     &.active {
       background-color: rgba(0, 0, 0, 0.05);
-      cursor: pointer;
-      pointer-events: none;
     }
     @keyframes grow {
       from {
@@ -221,18 +227,18 @@ header {
         cursor: pointer;
         list-style: none;
         font-size: 1.5em;
-        color: rgba(68, 68, 68, 0.25);
-        transition: 0.25s ease-in-out;
-        text-decoration: none;
-        &.active {
-          color: rgba(68, 68, 68, 1);
+
+        a {
+          color: rgba(68, 68, 68, 0.25);
           transition: 0.25s ease-in-out;
+          text-decoration: none;
+          &.active {
+            color: rgba(68, 68, 68, 1);
+            transition: 0.25s ease-in-out;
+          }
         }
       }
     }
-  }
-  .fm-tab:not(:first-child) {
-    display: none;
   }
 }
 

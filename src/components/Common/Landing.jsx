@@ -5,7 +5,7 @@ import Features from "./Features";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 
-export default function Landing() {
+export default function Landing(props) {
   useEffect(() => {
     Prism.highlightAll();
   });
@@ -25,7 +25,7 @@ export default function Landing() {
                 </h4>
               </span>
               <div className="grid-12 button-wrapper">
-                <Link className="button link large" to="/get-started">
+                <Link className="button link large" to="/documentation">
                   Get Flexd<i className="fa fa-angle-right"></i>
                 </Link>
                 <Link className="button link large">
