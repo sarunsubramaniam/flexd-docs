@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "../Categories/Menu/Menu";
 import ComponentGroup from "../Categories/ComponentGroup";
-import Header from "./Header";
+import Header from "../Common/Header";
 import CategoryTab from "../Categories/Tab/CategoryTab";
 
 export default function Body() {
@@ -10,7 +10,6 @@ export default function Body() {
       <Header theme="opaque" button={true} />
       <div className="header-offset"></div>
       <CategoryTab />
-
       <div className="wrapper-fluid doc-body">
         <div className="wrapper">
           <div className="grid-wrapper">

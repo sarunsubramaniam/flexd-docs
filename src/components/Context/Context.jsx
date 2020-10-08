@@ -17,8 +17,8 @@ import Scaffold from "../Categories/GetStarted/Scaffold";
 
 export const DataConsumer = createContext();
 export const DataProvider = (props) => {
+  const [tab, setTab] = useState({ currentTab: "getStarted" });
   const [data, setData] = useState({
-    page: "getStarted",
     getStarted: [
       {
         id: 1,
@@ -169,7 +169,9 @@ export const DataProvider = (props) => {
   });
 
   return (
-    <DataConsumer.Provider value={[data, setData]}>
+    <DataConsumer.Provider
+      value={{ dataVal: [data, setData], tabVal: [tab, setTab] }}
+    >
       {props.children}
     </DataConsumer.Provider>
   );

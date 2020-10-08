@@ -1,11 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import Prism from "prismjs";
 import logo from "../../images/docs/logo.svg";
-import Features from "./Features";
+import Features from "../Common/Features";
 import { Link } from "react-router-dom";
-import Header from "./Header";
+import { DataConsumer } from "../Context/Context";
+import Header from "../Common/Header";
 
 export default function Landing(props) {
+  const { dataVal, tabVal } = useContext(DataConsumer);
+  const [data] = dataVal;
+  const [tab] = tabVal;
   useEffect(() => {
     Prism.highlightAll();
   });
@@ -25,10 +29,15 @@ export default function Landing(props) {
                 </h4>
               </span>
               <div className="grid-12 button-wrapper">
-                <Link className="button link large" to="/documentation">
+                <Link
+                  className="button link large"
+                  to={`/documentation/${tab.currentTab}/${
+                    data[tab.currentTab][0].dataId
+                  }`}
+                >
                   Get Flexd<i className="fa fa-angle-right"></i>
                 </Link>
-                <Link className="button link large">
+                <Link to="" className="button link large">
                   Download<i className="fa fa-angle-right"></i>
                 </Link>
               </div>
