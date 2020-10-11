@@ -1,4 +1,6 @@
 import React from "react";
+import Card from "../../Common/Card";
+import Code from "../../Common/Code";
 
 export default function QuickStart(props) {
   const cssSnippet = `<!-- Flexd CSS -->
@@ -12,92 +14,61 @@ export default function QuickStart(props) {
 
   return (
     <React.Fragment>
-      <h3 className="section-title">Quick Start</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maxime
-        blanditiis harum eius temporibus tempora dolore quisquam libero ea
-        doloribus reiciendis, laborum suscipit impedit provident asperiores cum
-        quidem minus laboriosam vel totam nesciunt, aliquam dolor. Asperiores
-        possimus aut consequatur quaerat maxime, culpa perferendis eveniet. At,
-        debitis soluta quas a consequatur aperiam provident non laboriosam
-        praesentium accusamus placeat veritatis minima fugit in! Non harum
-        incidunt similique deserunt a quibusdam consequuntur impedit, natus
-        ipsum, fugiat reprehenderit dolores repellendus sequi voluptatem
-        laudantium provident. consectetur!
-      </p>
-      <div className="grid-wrapper card">
-        <div className="grid-12 card-content">
-          <h4>Include Flexd</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-            maxime blanditiis harum eius temporibus tempora dolore quisquam
-            libero ea doloribus reiciendis, laborum suscipit impedit provident
-          </p>
-        </div>
-      </div>
-
-      <div className="grid-wrapper card">
-        <div className="grid-12 card-content">
-          <div className="grid-wrapper code-wrapper">
-            <div className="grid-12">
-              <h4>CSS</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-                maxime blanditiis harum eius temporibus tempora dolore quisquam
-                libero ea doloribus reiciendis, laborum suscipit impedit
-                provident
-              </p>
-              <figure>
-                <pre>
-                  <code className="language-html">{cssSnippet}</code>
-                </pre>
-              </figure>
-            </div>
+      <Card>
+        <h4>Include Flexd</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maxime
+          blanditiis harum eius temporibus tempora dolore quisquam libero ea
+          doloribus reiciendis, laborum suscipit impedit provident
+        </p>
+      </Card>
+      <Card>
+        <div className="grid-wrapper code-wrapper">
+          <div className="grid-12">
+            <h4>CSS</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              maxime blanditiis harum eius temporibus tempora dolore quisquam
+              libero ea doloribus reiciendis, laborum suscipit impedit provident
+            </p>
+            <figure>
+              <Code language="language-html">{cssSnippet}</Code>
+            </figure>
           </div>
         </div>
-      </div>
+      </Card>
 
-      <div className="grid-wrapper card">
-        <div className="grid-12 card-content">
-          <div className="grid-wrapper code-wrapper">
-            <div className="grid-12">
-              <h4>Javascript</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-                maxime blanditiis harum eius temporibus tempora dolore quisquam
-                libero ea doloribus reiciendis, laborum suscipit impedit
-                provident
-              </p>
-              <figure>
-                <pre>
-                  <code className="language-html">{jsSnippet}</code>
-                </pre>
-              </figure>
-            </div>
+      <Card>
+        <div className="grid-wrapper code-wrapper">
+          <div className="grid-12">
+            <h4>Javascript</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              maxime blanditiis harum eius temporibus tempora dolore quisquam
+              libero ea doloribus reiciendis, laborum suscipit impedit provident
+            </p>
+            <figure>
+              <Code language="language-html">{jsSnippet}</Code>
+            </figure>
           </div>
         </div>
-      </div>
+      </Card>
 
-      <div className="grid-wrapper card">
-        <div className="grid-12 card-content">
-          <div className="grid-wrapper code-wrapper">
-            <div className="grid-12">
-              <h4>Font Awesome CDN</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-                maxime blanditiis harum eius temporibus tempora dolore quisquam
-                libero ea doloribus reiciendis, laborum suscipit impedit
-                provident
-              </p>
-              <figure>
-                <pre>
-                  <code className="language-html">{fontAwesomeSnippet}</code>
-                </pre>
-              </figure>
-            </div>
+      <Card>
+        <div className="grid-wrapper code-wrapper">
+          <div className="grid-12">
+            <h4>Font Awesome CDN</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              maxime blanditiis harum eius temporibus tempora dolore quisquam
+              libero ea doloribus reiciendis, laborum suscipit impedit provident
+            </p>
+            <figure>
+              <Code language="language-html">{fontAwesomeSnippet}</Code>
+            </figure>
           </div>
         </div>
-      </div>
+      </Card>
     </React.Fragment>
   );
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import Card from "../../Common/Card";
+import Code from "../../Common/Code";
 
 export default function Buttons(props) {
   const buttonSnippet = `<div class="button-wrapper">
@@ -14,48 +16,30 @@ export default function Buttons(props) {
 </div>`;
   return (
     <React.Fragment>
-      <div className="grid-wrapper">
-        <div className="grid-12">
-          <h3 className="section-title">Buttons</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
-            repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo
-            consequuntur alias, debitis voluptatibus repellat corporis. Possimus
-            dicta reprehenderit nesciunt nam magni dignissimos.
-          </p>
+      <Card>
+        <h5>Example</h5>
+        <div className="button-wrapper">
+          <button className="button solid">Default</button>
+          <button className="button primary">Primary</button>
+          <button className="button secondary">Secondary</button>
+          <button className="button primary solid">Primary</button>
+          <button className="button secondary solid">Secondary</button>
+          <button className="button error">Primary</button>
+          <button className="button info">Secondary</button>
+          <button className="button error solid">Primary</button>
+          <button className="button info solid">Secondary</button>
         </div>
-      </div>
-
-      <div className="grid-wrapper card">
-        <div className="grid-12 card-content">
-          <h5>Example</h5>
-          <div className="button-wrapper">
-            <button className="button solid">Default</button>
-            <button className="button primary">Primary</button>
-            <button className="button secondary">Secondary</button>
-            <button className="button primary solid">Primary</button>
-            <button className="button secondary solid">Secondary</button>
-            <button className="button error">Primary</button>
-            <button className="button info">Secondary</button>
-            <button className="button error solid">Primary</button>
-            <button className="button info solid">Secondary</button>
+      </Card>
+      <Card>
+        <h5>Implementation</h5>
+        <div className="grid-wrapper code-wrapper">
+          <div className="grid-12">
+            <figure>
+              <Code language="language-html">{buttonSnippet}</Code>
+            </figure>
           </div>
         </div>
-      </div>
-      <div className="grid-wrapper card">
-        <div className="grid-12 card-content">
-          <h5>Implementation</h5>
-          <div className="grid-wrapper code-wrapper">
-            <div className="grid-12">
-              <figure>
-                <pre>
-                  <code className="language-html">{buttonSnippet}</code>
-                </pre>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
+      </Card>
     </React.Fragment>
   );
 }

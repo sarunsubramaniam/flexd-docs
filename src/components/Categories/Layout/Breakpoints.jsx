@@ -1,5 +1,6 @@
 import React from "react";
+import Card from "../../Common/Card";
 
 export default function Breakpoints() {
-  return <div>breakpoints</div>;
+  return <Card>breakpoints</Card>;
 }

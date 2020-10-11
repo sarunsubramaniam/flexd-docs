@@ -21,6 +21,12 @@ export default function ComponentGroup() {
                 id={item.dataId}
                 className={`component-section fm-tab ${item.theme}`}
               >
+                <div className="grid-wrapper">
+                  <div className="grid-12">
+                    <h3 className="section-title">{item.name}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
                 {item.component}
               </div>
             </Route>

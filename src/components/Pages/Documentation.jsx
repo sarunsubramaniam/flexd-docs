@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Menu from "../Categories/Menu/Menu";
 import ComponentGroup from "../Categories/ComponentGroup";
 import Header from "../Common/Header";
 import CategoryTab from "../Categories/Tab/CategoryTab";
 
-export default function Body() {
+export default function Documentation() {
+  useEffect(() => {});
   return (
     <React.Fragment>
       <Header theme="opaque" button={true} />

@@ -21,6 +21,7 @@ export default function CategoryTab() {
       currentTab: tabData,
     }));
   };
+
   return (
     <div className="wrapper-fluid category-tabs">
       <div className="wrapper">
