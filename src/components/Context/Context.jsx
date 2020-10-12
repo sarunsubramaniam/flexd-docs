@@ -33,7 +33,7 @@ export const DataProvider = (props) => {
         category: "Get Started",
         theme: "flexd-orange",
         description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+          "Flexd is a open source CSS Framework built with flexbox and compiled using SCSS (CSS Preprocessor). It helps to create elegant, responsive and flexible layouts.",
       },
       {
         id: 2,

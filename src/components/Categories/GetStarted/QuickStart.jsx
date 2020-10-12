@@ -17,9 +17,8 @@ export default function QuickStart(props) {
       <Card>
         <h4>Include Flexd</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maxime
-          blanditiis harum eius temporibus tempora dolore quisquam libero ea
-          doloribus reiciendis, laborum suscipit impedit provident
+          Download Flexd .zip via GitHub, then place the unzipped folder in your
+          project's folder.
         </p>
       </Card>
       <Card>
