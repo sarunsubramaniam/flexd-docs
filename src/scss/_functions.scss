@@ -1,0 +1,24 @@
+@mixin gridWidth($grid) {
+  flex: 0 0 $grid / 12 * 100%;
+  max-width: $grid / 12 * 100%;
+}
+
+@mixin offsetWidth($grid) {
+  margin-left: $grid / 12 * 100%;
+}
+
+@mixin marginTop($top) {
+  margin-top: $top * 0.25rem;
+}
+
+@mixin marginBottom($bottom) {
+  margin-bottom: $bottom * 0.25rem;
+}
+
+@mixin paddingTop($top) {
+  padding-top: $top * 0.25rem;
+}
+
+@mixin paddingBottom($bottom) {
+  padding-bottom: $bottom * 0.25rem;
+}

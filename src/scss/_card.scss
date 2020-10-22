@@ -1,0 +1,25 @@
+.card {
+  position: relative;
+  border-radius: 2px;
+  max-width: 100%;
+  background-color: $white-grade--1;
+  margin: 1rem auto 1rem auto;
+  box-shadow: $shadow;
+  overflow: hidden;
+  .card-image {
+    img {
+      max-width: 100%;
+    }
+  }
+  .card-content {
+    padding: 1rem;
+    h4 {
+      color: $text-color-grade--1;
+    }
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
