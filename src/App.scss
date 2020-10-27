@@ -334,6 +334,22 @@ $colors: "flexd-blue-dark" "#0b6ffb" "#084498",
   }
 }
 
+.color-picker-wrapper {
+  .card-content {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    .color-grid {
+      display: inline-flex;
+      flex: 0 0 26px;
+      max-width: 26px;
+      height: 26px;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .fm-tab {
     display: block !important;
