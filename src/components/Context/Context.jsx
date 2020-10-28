@@ -10,6 +10,7 @@ import Typography from "../Categories/Helpers/Typography";
 import Margin from "../Categories/Helpers/Margin";
 import Padding from "../Categories/Helpers/Padding";
 import ColorPicker from "../Categories/Utilities/ColorPicker";
+import Flex from "../Categories/Utilities/Flex";
 import Alerts from "../Categories/Elements/Alerts";
 import Tabs from "../Categories/Components/Tabs";
 import Accordion from "../Categories/Components/Accordion";
@@ -251,6 +252,17 @@ export const DataProvider = (props) => {
         dataId: 'color-picker',
         name: 'Color Picker',
         component: <ColorPicker />,
+        display: true,
+        category: 'Utilities',
+        theme: 'flexd-yellow',
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+      },
+      {
+        id: 19,
+        dataId: 'flex',
+        name: 'Flex',
+        component: <Flex />,
         display: true,
         category: 'Utilities',
         theme: 'flexd-yellow',
