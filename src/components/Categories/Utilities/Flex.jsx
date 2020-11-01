@@ -4,11 +4,15 @@ import Card from "../../Common/Card";
 export default function Flex() {
   return (
     <React.Fragment>
+      <h5>Flex Container</h5>
       <Card>
-        <h5>Flex Container</h5>
         <div className="grid-wrapper">
           <div className="grid-4 flex-column">
             <h6>display</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-flex">
                 <div className="flex-item one"></div>
@@ -32,6 +36,10 @@ export default function Flex() {
           </div>
           <div className="grid-4 flex-column">
             <h6>flex-direction</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-row">
                 <div className="flex-item one"></div>
@@ -77,6 +85,10 @@ export default function Flex() {
           </div>
           <div className="grid-4 flex-column">
             <h6>flex-wrap</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-nowrap">
                 <div className="flex-item one"></div>
@@ -112,6 +124,10 @@ export default function Flex() {
           </div>
           <div className="grid-4 flex-column">
             <h6>justify-content</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-flex-start">
                 <div className="flex-item one"></div>
@@ -165,6 +181,10 @@ export default function Flex() {
           </div>
           <div className="grid-4 flex-column">
             <h6>align-items</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-align-flex-start">
                 <div className="flex-item one"></div>
@@ -218,6 +238,10 @@ export default function Flex() {
           </div>
           <div className="grid-4 flex-column">
             <h6>align-content</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-alignc-flex-start">
                 <div className="flex-item one"></div>
@@ -287,11 +311,15 @@ export default function Flex() {
           </div>
         </div>
       </Card>
+      <h5>Flex Item</h5>
       <Card>
-        <h5>Flex Item</h5>
         <div className="grid-wrapper">
           <div className="grid-4 flex-column">
             <h6>flex-grow</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-grow-1">
                 <div className="flex-item one"></div>
@@ -311,6 +339,10 @@ export default function Flex() {
           </div>
           <div className="grid-4 flex-column">
             <h6>flex-basis</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-basis">
                 <div className="flex-item one"></div>
@@ -321,6 +353,10 @@ export default function Flex() {
           </div>
           <div className="grid-4 flex-column">
             <h6>flex-shrink</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-shrink">
                 <div className="flex-item one"></div>
@@ -331,6 +367,10 @@ export default function Flex() {
           </div>
           <div className="grid-4 flex-column">
             <h6>align-self</h6>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae ea obcaecati aliquid ipsa facere accusamus unde.
+            </p>
             <div className="flex-card">
               <div className="flex-container ex-self">
                 <div className="flex-item one"></div>
