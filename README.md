@@ -1,23 +1,13 @@
-# Flexd
+# Flexd Documentation
 
-Flexd is an open source UI Framework, based on Flexbox module. 
+Flexd-docs is a repository being maintained for the Flexd UI framework.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager npm to install flexd-docs.
 
 ```bash
-pip install foobar
-```
-
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+npm install flexd-docs
 ```
 
 ## Contributing
