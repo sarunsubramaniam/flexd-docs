@@ -1,24 +1,31 @@
 import React, { createContext, useState } from "react";
 import Grid from "../Categories/Layout/Grid";
-import Breakpoints from "../Categories/Layout/Breakpoints";
+import Breakpoints from "../Categories/GetStarted/Breakpoints";
 import Wrapper from "../Categories/Layout/Wrapper";
 import Cards from "../Categories/Components/Cards";
 import QuickStart from "../Categories/GetStarted/QuickStart";
+import Navbar from "../Categories/Components/Navbar";
+import Banner from "../Categories/Layout/Banner";
+import Footer from "../Categories/Layout/Footer";
 import Overview from "../Categories/GetStarted/Overview";
 import Buttons from "../Categories/Elements/Buttons";
 import Typography from "../Categories/Helpers/Typography";
 import Margin from "../Categories/Helpers/Margin";
 import Padding from "../Categories/Helpers/Padding";
-import ColorPicker from "../Categories/Utilities/ColorPicker";
-import Flex from "../Categories/Utilities/Flex";
+import Flex from "../Categories/Helpers/Flex";
+import Color from "../Categories/Helpers/Color";
 import Alerts from "../Categories/Elements/Alerts";
 import Tabs from "../Categories/Components/Tabs";
+import Dropdown from "../Categories/Components/Dropdown";
+import Modal from "../Categories/Components/Modal";
+import Pagination from "../Categories/Components/Pagination.jsx";
 import Accordion from "../Categories/Components/Accordion";
 import Table from "../Categories/Elements/Table";
 import Inputs from "../Categories/Form/Inputs";
 import Textarea from "../Categories/Form/Textarea";
 import Checkbox from "../Categories/Form/Checkbox";
 import Radio from "../Categories/Form/Radio";
+import Select from "../Categories/Form/Select";
 import Scaffold from "../Categories/GetStarted/Scaffold";
 
 export const DataConsumer = createContext();
@@ -59,6 +66,17 @@ export const DataProvider = (props) => {
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
+      {
+        id: 6,
+        dataId: "breakpoints",
+        name: "Breakpoints",
+        component: <Breakpoints />,
+        display: true,
+        category: "Get Started",
+        theme: "flexd-orange",
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+      },
     ],
     layout: [
       {
@@ -67,7 +85,7 @@ export const DataProvider = (props) => {
         name: "Grid",
         component: <Grid />,
         display: true,
-        category: "Layout",
+        category: "Get Started",
         theme: "flexd-blue-dark",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
@@ -78,6 +96,17 @@ export const DataProvider = (props) => {
         name: "Wrapper",
         component: <Wrapper />,
         display: true,
+        category: "Get Started",
+        theme: "flexd-blue-dark",
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+      },
+      {
+        id: 6,
+        dataId: "banner",
+        name: "Banner",
+        component: <Banner />,
+        display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
         description:
@@ -85,9 +114,9 @@ export const DataProvider = (props) => {
       },
       {
         id: 6,
-        dataId: "breakpoints",
-        name: "Breakpoints",
-        component: <Breakpoints />,
+        dataId: "footer",
+        name: "Footer",
+        component: <Footer />,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
@@ -104,6 +133,50 @@ export const DataProvider = (props) => {
         display: true,
         category: "Components",
         theme: "flexd-yellow",
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+      },
+      {
+        id: 6,
+        dataId: "navbar",
+        name: "Navbar",
+        component: <Navbar />,
+        display: true,
+        category: "Layout",
+        theme: "flexd-blue-dark",
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+      },
+      {
+        id: 6,
+        dataId: "dropdown",
+        name: "Dropdown",
+        component: <Dropdown />,
+        display: true,
+        category: "Layout",
+        theme: "flexd-blue-dark",
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+      },
+      {
+        id: 6,
+        dataId: "modal",
+        name: "Modal",
+        component: <Modal />,
+        display: true,
+        category: "Layout",
+        theme: "flexd-blue-dark",
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+      },
+      {
+        id: 6,
+        dataId: "pagination",
+        name: "Pagination",
+        component: <Pagination />,
+        display: true,
+        category: "Layout",
+        theme: "flexd-blue-dark",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
@@ -200,7 +273,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 15,
+        id: 16,
         dataId: "radio",
         name: "Radio",
         component: <Radio />,
@@ -210,10 +283,21 @@ export const DataProvider = (props) => {
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
+      {
+        id: 17,
+        dataId: "select",
+        name: "Select",
+        component: <Select />,
+        display: true,
+        category: "Form",
+        theme: "flexd-orange",
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+      }
     ],
     helpers: [
       {
-        id: 15,
+        id: 18,
         dataId: "typography",
         name: "Typography",
         component: <Typography />,
@@ -224,7 +308,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 16,
+        id: 19,
         dataId: "margin",
         name: "Margin",
         component: <Margin />,
@@ -235,7 +319,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 17,
+        id: 20,
         dataId: "padding",
         name: "Padding",
         component: <Padding />,
@@ -245,30 +329,28 @@ export const DataProvider = (props) => {
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
-    ],
-    utilities: [
       {
-        id: 18,
-        dataId: 'color-picker',
-        name: 'Color Picker',
-        component: <ColorPicker />,
+        id: 21,
+        dataId: "flex",
+        name: "Flex",
+        component: <Flex />,
         display: true,
-        category: 'Utilities',
-        theme: 'flexd-yellow',
+        category: "Helper Classes",
+        theme: "flexd-blue-light",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 19,
-        dataId: 'flex',
-        name: 'Flex',
-        component: <Flex />,
+        id: 22,
+        dataId: "color",
+        name: "Color",
+        component: <Color />,
         display: true,
-        category: 'Utilities',
-        theme: 'flexd-yellow',
+        category: "Helper Classes",
+        theme: "flexd-blue-light",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
-      }
+      },
     ]
   });
 
