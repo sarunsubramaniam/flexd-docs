@@ -37,6 +37,7 @@ export default function CategoryTab() {
                   onClick={onButtonClick}
                 >
                   <Link to={`/documentation/${key}/${value[0].dataId}`}>
+                    <img src={require(`../../../images/docs/${key}.svg`)} />
                     <h6>{value[0].category}</h6>
                   </Link>
                 </div>

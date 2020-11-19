@@ -67,7 +67,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 6,
+        id: 4,
         dataId: "breakpoints",
         name: "Breakpoints",
         component: <Breakpoints />,
@@ -80,29 +80,29 @@ export const DataProvider = (props) => {
     ],
     layout: [
       {
-        id: 4,
+        id: 5,
         dataId: "grid",
         name: "Grid",
         component: <Grid />,
         display: true,
-        category: "Get Started",
-        theme: "flexd-blue-dark",
-        description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
-      },
-      {
-        id: 5,
-        dataId: "wrapper",
-        name: "Wrapper",
-        component: <Wrapper />,
-        display: true,
-        category: "Get Started",
+        category: "Layout",
         theme: "flexd-blue-dark",
         description:
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
         id: 6,
+        dataId: "wrapper",
+        name: "Wrapper",
+        component: <Wrapper />,
+        display: true,
+        category: "Layout",
+        theme: "flexd-blue-dark",
+        description:
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
+      },
+      {
+        id: 7,
         dataId: "banner",
         name: "Banner",
         component: <Banner />,
@@ -113,7 +113,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 6,
+        id: 8,
         dataId: "footer",
         name: "Footer",
         component: <Footer />,
@@ -126,7 +126,7 @@ export const DataProvider = (props) => {
     ],
     components: [
       {
-        id: 7,
+        id: 9,
         dataId: "cards",
         name: "Cards",
         component: <Cards />,
@@ -137,7 +137,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 6,
+        id: 10,
         dataId: "navbar",
         name: "Navbar",
         component: <Navbar />,
@@ -148,7 +148,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 6,
+        id: 11,
         dataId: "dropdown",
         name: "Dropdown",
         component: <Dropdown />,
@@ -159,7 +159,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 6,
+        id: 12,
         dataId: "modal",
         name: "Modal",
         component: <Modal />,
@@ -170,7 +170,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 6,
+        id: 13,
         dataId: "pagination",
         name: "Pagination",
         component: <Pagination />,
@@ -181,7 +181,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 8,
+        id: 14,
         dataId: "tabs",
         name: "Tabs",
         component: <Tabs />,
@@ -192,7 +192,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 9,
+        id: 15,
         dataId: "accordion",
         name: "Accordion",
         component: <Accordion />,
@@ -205,7 +205,7 @@ export const DataProvider = (props) => {
     ],
     elements: [
       {
-        id: 10,
+        id: 16,
         dataId: "buttons",
         name: "Buttons",
         component: <Buttons />,
@@ -216,7 +216,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 11,
+        id: 17,
         dataId: "table",
         name: "Table",
         component: <Table />,
@@ -227,7 +227,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 12,
+        id: 18,
         dataId: "alerts",
         name: "Alerts",
         component: <Alerts />,
@@ -240,7 +240,7 @@ export const DataProvider = (props) => {
     ],
     form: [
       {
-        id: 13,
+        id: 19,
         dataId: "inputs",
         name: "Inputs",
         component: <Inputs />,
@@ -251,7 +251,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 14,
+        id: 20,
         dataId: "textarea",
         name: "Textarea",
         component: <Textarea />,
@@ -262,7 +262,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 15,
+        id: 21,
         dataId: "checkbox",
         name: "Checkbox",
         component: <Checkbox />,
@@ -273,7 +273,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 16,
+        id: 22,
         dataId: "radio",
         name: "Radio",
         component: <Radio />,
@@ -284,7 +284,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 17,
+        id: 23,
         dataId: "select",
         name: "Select",
         component: <Select />,
@@ -297,7 +297,7 @@ export const DataProvider = (props) => {
     ],
     helpers: [
       {
-        id: 18,
+        id: 24,
         dataId: "typography",
         name: "Typography",
         component: <Typography />,
@@ -308,7 +308,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 19,
+        id: 25,
         dataId: "margin",
         name: "Margin",
         component: <Margin />,
@@ -319,7 +319,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 20,
+        id: 26,
         dataId: "padding",
         name: "Padding",
         component: <Padding />,
@@ -330,7 +330,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 21,
+        id: 27,
         dataId: "flex",
         name: "Flex",
         component: <Flex />,
@@ -341,7 +341,7 @@ export const DataProvider = (props) => {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae, odio obcaecati maxime, laudantium earum culpa explicabo consequuntur alias, debitis voluptatibus repellat corporis. Possimus dicta reprehenderit nesciunt nam magni dignissimos.",
       },
       {
-        id: 22,
+        id: 28,
         dataId: "color",
         name: "Color",
         component: <Color />,
