@@ -14,11 +14,12 @@ export default function ComponentGroup() {
   return (
     <React.Fragment>
       {data[tab.currentTab].map((item, idx) => {
+        let dataId = item.name.toLowerCase().replace(' ','-');
         return (
-          <React.Fragment key={item.dataId}>
-            <Route path={`/documentation/${tab.currentTab}/${item.dataId}`}>
+          <React.Fragment key={dataId}>
+            <Route path={`/documentation/${tab.currentTab}/${dataId}`}>
               <div
-                id={item.dataId}
+                id={dataId}
                 className={`component-section fm-tab ${item.theme}`}
               >
                 <div className="grid-wrapper">
@@ -27,7 +28,7 @@ export default function ComponentGroup() {
                     <p>{item.description}</p>
                   </div>
                 </div>
-                {item.component}
+                  {React.createElement(item.component)}
               </div>
             </Route>
           </React.Fragment>

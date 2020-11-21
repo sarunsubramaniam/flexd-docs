@@ -35,9 +35,8 @@ export const DataProvider = (props) => {
     getStarted: [
       {
         id: 1,
-        dataId: "overview",
         name: "Overview",
-        component: <Overview />,
+        component: Overview,
         display: true,
         category: "Get Started",
         theme: "flexd-orange",
@@ -46,9 +45,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 2,
-        dataId: "quick-start",
         name: "Quick Start",
-        component: <QuickStart />,
+        component: QuickStart,
         display: true,
         category: "Get Started",
         theme: "flexd-orange",
@@ -57,9 +55,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 3,
-        dataId: "scaffold",
         name: "Scaffold",
-        component: <Scaffold />,
+        component: Scaffold,
         display: true,
         category: "Get Started",
         theme: "flexd-orange",
@@ -68,9 +65,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 4,
-        dataId: "breakpoints",
         name: "Breakpoints",
-        component: <Breakpoints />,
+        component: Breakpoints,
         display: true,
         category: "Get Started",
         theme: "flexd-orange",
@@ -81,9 +77,8 @@ export const DataProvider = (props) => {
     layout: [
       {
         id: 5,
-        dataId: "grid",
         name: "Grid",
-        component: <Grid />,
+        component: Grid,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
@@ -92,9 +87,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 6,
-        dataId: "wrapper",
         name: "Wrapper",
-        component: <Wrapper />,
+        component: Wrapper,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
@@ -103,9 +97,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 7,
-        dataId: "banner",
         name: "Banner",
-        component: <Banner />,
+        component: Banner,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
@@ -114,9 +107,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 8,
-        dataId: "footer",
         name: "Footer",
-        component: <Footer />,
+        component: Footer,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
@@ -127,9 +119,8 @@ export const DataProvider = (props) => {
     components: [
       {
         id: 9,
-        dataId: "cards",
         name: "Cards",
-        component: <Cards />,
+        component: Cards,
         display: true,
         category: "Components",
         theme: "flexd-yellow",
@@ -138,9 +129,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 10,
-        dataId: "navbar",
         name: "Navbar",
-        component: <Navbar />,
+        component: Navbar,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
@@ -149,9 +139,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 11,
-        dataId: "dropdown",
         name: "Dropdown",
-        component: <Dropdown />,
+        component: Dropdown,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
@@ -160,9 +149,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 12,
-        dataId: "modal",
         name: "Modal",
-        component: <Modal />,
+        component: Modal,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
@@ -171,9 +159,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 13,
-        dataId: "pagination",
         name: "Pagination",
-        component: <Pagination />,
+        component: Pagination,
         display: true,
         category: "Layout",
         theme: "flexd-blue-dark",
@@ -182,9 +169,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 14,
-        dataId: "tabs",
         name: "Tabs",
-        component: <Tabs />,
+        component: Tabs,
         display: true,
         category: "Components",
         theme: "flexd-yellow",
@@ -193,9 +179,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 15,
-        dataId: "accordion",
         name: "Accordion",
-        component: <Accordion />,
+        component: Accordion,
         display: true,
         category: "Components",
         theme: "flexd-yellow",
@@ -206,9 +191,8 @@ export const DataProvider = (props) => {
     elements: [
       {
         id: 16,
-        dataId: "buttons",
         name: "Buttons",
-        component: <Buttons />,
+        component: Buttons,
         display: true,
         category: "Elements",
         theme: "flexd-green",
@@ -217,9 +201,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 17,
-        dataId: "table",
         name: "Table",
-        component: <Table />,
+        component: Table,
         display: true,
         category: "Elements",
         theme: "flexd-green",
@@ -228,9 +211,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 18,
-        dataId: "alerts",
         name: "Alerts",
-        component: <Alerts />,
+        component: Alerts,
         display: true,
         category: "Elements",
         theme: "flexd-green",
@@ -241,9 +223,8 @@ export const DataProvider = (props) => {
     form: [
       {
         id: 19,
-        dataId: "inputs",
         name: "Inputs",
-        component: <Inputs />,
+        component: Inputs,
         display: true,
         category: "Form",
         theme: "flexd-orange",
@@ -252,9 +233,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 20,
-        dataId: "textarea",
         name: "Textarea",
-        component: <Textarea />,
+        component: Textarea,
         display: true,
         category: "Form",
         theme: "flexd-orange",
@@ -263,9 +243,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 21,
-        dataId: "checkbox",
         name: "Checkbox",
-        component: <Checkbox />,
+        component: Checkbox,
         display: true,
         category: "Form",
         theme: "flexd-orange",
@@ -274,9 +253,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 22,
-        dataId: "radio",
         name: "Radio",
-        component: <Radio />,
+        component: Radio,
         display: true,
         category: "Form",
         theme: "flexd-orange",
@@ -285,9 +263,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 23,
-        dataId: "select",
         name: "Select",
-        component: <Select />,
+        component: Select,
         display: true,
         category: "Form",
         theme: "flexd-orange",
@@ -298,9 +275,8 @@ export const DataProvider = (props) => {
     helpers: [
       {
         id: 24,
-        dataId: "typography",
         name: "Typography",
-        component: <Typography />,
+        component: Typography,
         display: true,
         category: "Helper Classes",
         theme: "flexd-blue-light",
@@ -309,9 +285,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 25,
-        dataId: "margin",
         name: "Margin",
-        component: <Margin />,
+        component: Margin,
         display: true,
         category: "Helper Classes",
         theme: "flexd-blue-light",
@@ -320,9 +295,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 26,
-        dataId: "padding",
         name: "Padding",
-        component: <Padding />,
+        component: Padding,
         display: true,
         category: "Helper Classes",
         theme: "flexd-blue-light",
@@ -331,9 +305,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 27,
-        dataId: "flex",
         name: "Flex",
-        component: <Flex />,
+        component: Flex,
         display: true,
         category: "Helper Classes",
         theme: "flexd-blue-light",
@@ -342,9 +315,8 @@ export const DataProvider = (props) => {
       },
       {
         id: 28,
-        dataId: "color",
         name: "Color",
-        component: <Color />,
+        component: Color,
         display: true,
         category: "Helper Classes",
         theme: "flexd-blue-light",

@@ -21,10 +21,11 @@ export default function Menu() {
       <div className="doc-menu">
         <ul>
           {data[tab.currentTab].map((item, idx) => {
+            let dataId = item.name.toLowerCase().replace(' ','-');
             return (
               <React.Fragment key={idx}>
                 <li
-                  data-id={item.dataId}
+                  data-id={dataId}
                   style={{
                     display: item.display === true ? "block" : "none",
                   }}
@@ -32,7 +33,7 @@ export default function Menu() {
                   <Link
                     onClick={onMenuClick}
                     className={idx === 0 ? "active" : ""}
-                    to={`/documentation/${tab.currentTab}/${item.dataId}`}
+                    to={`/documentation/${tab.currentTab}/${dataId}`}
                   >
                     {item.name}
                   </Link>

@@ -27,6 +27,7 @@ export default function CategoryTab() {
       <div className="wrapper">
         <div className="grid-wrapper">
           {Object.entries(data).map(([key, value]) => {
+            let dataId = value[0].name.toLowerCase().replace(' ','-');
             return (
               <React.Fragment key={key}>
                 <div
@@ -36,8 +37,8 @@ export default function CategoryTab() {
                   data-id={key}
                   onClick={onButtonClick}
                 >
-                  <Link to={`/documentation/${key}/${value[0].dataId}`}>
-                    <img src={require(`../../../images/docs/${key}.svg`)} />
+                  <Link to={`/documentation/${key}/${dataId}`}>
+                    <img alt={value[0].category} src={require(`../../../images/docs/${key}.svg`)} />
                     <h6>{value[0].category}</h6>
                   </Link>
                 </div>
