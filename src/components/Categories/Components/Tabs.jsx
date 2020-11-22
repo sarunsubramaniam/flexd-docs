@@ -7,7 +7,7 @@ export default function Tabs(props) {
   useEffect(() => {
     let tabOne = document.getElementById("tab-name");
     $(tabOne).tabs();
-  });
+  }, []);
   const tabHTMLSnippet = `<div id="myTab" className="tabs">
   <div className="tab-header">
     <ul>

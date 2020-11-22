@@ -7,6 +7,7 @@ export default function Header(props) {
   const { dataVal, tabVal } = useContext(DataConsumer);
   const [data] = dataVal;
   const [tab] = tabVal;
+  let dataId = data[tab.currentTab][0].name.toLowerCase().replace(' ','-');
   const onNavClick = () => {
     let menuItems = document.querySelectorAll(".doc-menu ul li a");
     [...menuItems].forEach((item, idx) => {
@@ -34,9 +35,7 @@ export default function Header(props) {
                 <li>
                   <Link
                     onClick={onNavClick}
-                    to={`/documentation/${tab.currentTab}/${
-                      data[tab.currentTab][0].dataId
-                    }`}
+                    to={`/documentation/${tab.currentTab}/${dataId}`}
                   >
                     Documentation
                   </Link>

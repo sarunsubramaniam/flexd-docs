@@ -10,9 +10,10 @@ export default function Landing(props) {
   const { dataVal, tabVal } = useContext(DataConsumer);
   const [data] = dataVal;
   const [tab] = tabVal;
+  let dataId = data[tab.currentTab][0].name.toLowerCase().replace(' ','-');
   useEffect(() => {
     Prism.highlightAll();
-  });
+  }, []);
   return (
     <React.Fragment>
       <Header theme="opaque" button={false} />
@@ -31,9 +32,7 @@ export default function Landing(props) {
               <div className="grid-12 button-wrapper">
                 <Link
                   className="button link large"
-                  to={`/documentation/${tab.currentTab}/${
-                    data[tab.currentTab][0].dataId
-                  }`}
+                  to={`/documentation/${tab.currentTab}/${dataId}`}
                 >
                   Get Flexd<i className="fa fa-angle-right"></i>
                 </Link>

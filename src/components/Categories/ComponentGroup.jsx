@@ -6,10 +6,18 @@ import { Route } from "react-router-dom";
 export default function ComponentGroup() {
   const { dataVal, tabVal } = useContext(DataConsumer);
   const [data] = dataVal;
-  const [tab] = tabVal;
+  const [tab, setTab] = tabVal;
+  
   useEffect(() => {
     Prism.highlightAll();
-  });
+    let url = window.location.pathname,
+        category = url.split('/')[2];
+    setTab((prev) => ({
+      ...prev,
+      currentTab: category,
+    }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <React.Fragment>
@@ -17,7 +25,7 @@ export default function ComponentGroup() {
         let dataId = item.name.toLowerCase().replace(' ','-');
         return (
           <React.Fragment key={dataId}>
-            <Route path={`/documentation/${tab.currentTab}/${dataId}`}>
+            <Route exact path={`/documentation/${tab.currentTab}/${dataId}`}>
               <div
                 id={dataId}
                 className={`component-section fm-tab ${item.theme}`}

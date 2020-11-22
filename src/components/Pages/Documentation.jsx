@@ -5,7 +5,7 @@ import Header from "../Common/Header";
 import CategoryTab from "../Categories/Tab/CategoryTab";
 
 export default function Documentation() {
-  useEffect(() => {});
+  useEffect(() => {}, []);
   return (
     <React.Fragment>
       <Header theme="opaque" button={true} />
