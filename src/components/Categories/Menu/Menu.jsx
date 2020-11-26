@@ -22,6 +22,8 @@ export default function Menu() {
         <ul>
           {data[tab.currentTab].map((item, idx) => {
             let dataId = item.name.toLowerCase().replace(' ','-');
+            let url = window.location.pathname,
+                category = url.split('/')[3];
             return (
               <React.Fragment key={idx}>
                 <li
@@ -32,7 +34,7 @@ export default function Menu() {
                 >
                   <Link
                     onClick={onMenuClick}
-                    className={idx === 0 ? "active" : ""}
+                    className={(dataId === category) ? "active" : ""}
                     to={`/documentation/${tab.currentTab}/${dataId}`}
                   >
                     {item.name}
