@@ -212,6 +212,16 @@ header {
       border-radius: 5px;
     }
   }
+
+  & > .card {
+    &:not(.input-wrapper) {
+      background-color: transparent;
+      box-shadow: none;
+      & > .card-content {
+        padding: 0;
+      }
+    }
+  }
 }
 
 .header-offset {
