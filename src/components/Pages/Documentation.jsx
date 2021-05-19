@@ -9,7 +9,7 @@ export default function Documentation() {
   return (
     <React.Fragment>
       <Header theme="opaque" button={true} />
-      <div className="header-offset"></div>
+      {/* <div className="header-offset"></div> */}
       <CategoryTab />
       <div className="wrapper-fluid doc-body">
         <div className="wrapper">

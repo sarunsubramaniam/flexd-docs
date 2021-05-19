@@ -16,7 +16,7 @@ export default function Landing(props) {
   }, []);
   return (
     <React.Fragment>
-      <Header theme="opaque" button={false} />
+      <Header theme="transparent" button={false} />
       <div className="wrapper-fluid doc-landing">
         <div className="wrapper component-section">
           <div className="grid-wrapper doc-landing-content">

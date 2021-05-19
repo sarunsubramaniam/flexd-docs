@@ -16,7 +16,7 @@ header {
   color: $white;
   &.opaque {
     background: $black;
-    position: fixed;
+    position: relative;
   }
   &.transparent {
     position: absolute;
@@ -120,7 +120,7 @@ header {
   text-align: center;
   background: #f4f4f5;
   position: sticky;
-  top: $headerSpan;
+  top: 0;
   z-index: 1;
   h6 {
     font-size: 0.875rem;
@@ -232,7 +232,7 @@ header {
   padding: 25px 0;
   .doc-menu {
     position: sticky;
-    top: 200px;
+    top: 130px;
     ul {
       padding: 10px 0;
       li {
