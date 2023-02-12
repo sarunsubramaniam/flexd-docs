@@ -2,33 +2,29 @@
   border-collapse: collapse;
   width: 100%;
   text-align: left;
-  border: 1px solid $outline;
+  background-color: #fff;
+  box-shadow: $shadow;
   thead {
     tr {
-      background-color: $grey-grade--2;
-      border-bottom: 1px solid $outline;
+      background-color: $primaryColor;
+      color: #fff;
       th {
         padding: 0.875rem;
         text-align: left;
+        text-transform: uppercase;
       }
     }
   }
 
   tbody {
     tr {
-      border-bottom: 1px solid $outline;
       td {
         padding: 0.875rem;
         text-align: left;
+        font-weight: 500;
       }
-    }
-  }
-  &.striped {
-    tbody {
-      tr {
-        &:nth-child(even) {
-          background-color: $grey-grade--2;
-        }
+      &:nth-child(even) {
+        background-color: $light-grey;
       }
     }
   }
