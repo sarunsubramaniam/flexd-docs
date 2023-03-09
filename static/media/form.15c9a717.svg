@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 96 96">
+      <image width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAE9ElEQVR4Xu2dve4OQRTGn/8VIC4ALQVqBWoFEj1CpcEN+IhES6MU9BIU1DRaFLS4AR9XQB52847J7M7se+a8s/Z9JhFh52uf386ZObM7592BUlMFdpq2rsYhAI0fAgEQgMYKNG5eI2ChAPYDuAfgBIDdje+xRvOvAdwGwL+rJo8RQPHfLUT4WOyTtSF4AHgO4HTVx2Q+lb3pRnW1HnkA+L7Qp5+i/wCwp5r6gIsf8CvqoAfkmhrk6nK9Hw9xXDucU8vhuuv9CECemADkNXLN0QRAzXW8xyhzVTyqPAYwte2fAD4CuAvgZVw4JU7tdfy2Awg1PwXgVfgfKXFqr+MFYKX4WwDHcgBqr+MFYKX4NwB7cwCsk461/FQb653fej+j5VNPp2uD3mo51O+qhwDkiQlAXiPXHIsFcAbATQBHXOXLV/4FwHUAXP2l0mIBfAZAn2MO6T2Ao9sGgE/evjmoD+DDyEhc7AigCboF4HBjCF8BXNtGE9RY9+LmFzsCihVonFEABGCaAtYnZlpr/rmt96OtCCMjATAKaC0uAFYFjeUFwCigtfhiAWgvaODDLFfiweOovaDGALQX1BiA9oIaA7BOjpsq72qS9Uoyj1EA8hq55hAAV3nzlQtAXiPXHALgKm++cgHIa+SaQwBc5c1XvlgAXntBue988pL/m2OxADy3Isa+8xGATgFPAGPf+QhAp4DXXlDuOx8BmKpA4/yLnQMa61rcvAAUS+WTUQB8dC2uVQCKpfLJKAA+uhbXKgDFUvlkFAAfXYtrFYBiqXwyhh77Oh62Ps41cuk9dgYfHDtJM9SMABgBWIsLQEJBns483x3MYyjKFwBoajySAESq0qQ8SgQWJIjHHQwG56uVBCBQknac36SOBZOl+Dy0/aRSjFABCABwEmVE39JEs8RRQRjrmigBCNTmuWSGR+gTA7FyNJScVV7XRAlAIDjt/7Pg33yqD3QhEzg6eD13en+qiRKAaA5gRLAwMUYE3yH3iRD4h6ukXOpNFAN7DyUBiJSJY+LRvl9IqEfTRBAcGTkTRYAM7J1aPQlAJG5shkriQdNvyJkojgLOMXEyA8gNw9z1OQbto+i7go5f7FY7uXvh9SETNQRyMgDO9sdLelKYZ44A7gO4GvSfnjCFnZJSS9rJ5y1SBeIhOqVTqbxzBMAoXfyRiTBxNVS61uecQW86TEM7pYyae7DL+AnAobDQkDj95MOOhkN1HRhzBMD74MQZTq4MW8aRkUsp8VkmXk319ZwDcAcATdENAE9LAOQ6MXbd+gLD0vaUsrEJ6X2CsTqGxJ8yh/xTv8fT+b8A4DIz5xOEYvHpTa331xaflW8zAN5/qU9wBcCDxNAwiS8Af1c+4dZEaik5ZHYeArg8xeZtaoUSmyBrH63lc+cFxnyCIfH7Ps1yBNT2I6wA+hXPUFzQIZ8gJ34VCB5zQG0/ogaAsa8ZUj4BJ9tw27rvA83OpZpzgQcA9q+mH2EFUHJeIPYJUm325qbqUtQLgFW0TZfPmZvY1leDIAAr1ENz19BEWwWCAKwA0DGjqPSQ+VaMryu5vTz2C6pDEM6OhEJ294Q3bT5at5eCULKt8affGgF18MUQOPEXheYXgDoA+pUfP2FhIpChH4SQCaqnub0mjQC7hqYaBMAkn72wANg1NNUgACb57IUFwK6hqQYBMMlnLywAdg1NNfwGqYuIcAF38PEAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <g id="Rectangle_3" data-name="Rectangle 3" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#pattern)">
+    <rect width="24" height="24" stroke="none"/>
+    <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+  </g>
+</svg>
